@@ -1,0 +1,399 @@
+{
+  "header": {
+    "nav": {
+      "home": "Úvod",
+      "services": "Služby",
+      "cooperation": "Proces",
+      "projects": "Projekty",
+      "about": "O nás"
+    },
+    "contact": "Kontakt",
+    "language": "Jazyk"
+  },
+  "footer": {
+    "description": "Poskytujeme klientům komplexní servis od návrhu nového výrobku, přes jeho konstrukční řešení až po implementaci do výroby.",
+    "services": {
+      "title": "Služby",
+      "research": "Průzkum trhu",
+      "design": "Design a grafika",
+      "construction": "Konstrukční řešení",
+      "reverse": "Reverzní inženýrství",
+      "documentation": "Výkresová dokumentace",
+      "production": "Podpora výroby"
+    },
+    "company": {
+      "title": "Společnost",
+      "about": "O nás",
+      "projects": "Projekty",
+      "process": "Proces",
+      "references": "Reference",
+      "awards": "Ocenění",
+      "contact": "Kontakt"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "address": "Kovriginova 1684/1, 147 00 Praha 4",
+      "phone": "+420 234 139 884",
+      "email": "info@exact-tech.cz"
+    },
+    "copyright": "© EXACT Technology, s.r.o. Všechna práva vyhrazena.",
+    "privacy": "Ochrana soukromí",
+    "terms": "Obchodní podmínky"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Komplexní vývoj vašeho produktu",
+      "title1": "Od prvotního",
+      "title2": "návrhu",
+      "title3": "až po výrobu",
+      "description": "Poskytujeme komplexní servis od inovativního designu nového výrobku, přes precizní konstrukční řešení ve 3D až po úspěšnou implementaci do výroby.",
+      "servicesBtn": "Naše služby",
+      "consultationBtn": "Sjednat schůzku"
+    },
+    "marquee": {
+      "trusted": "Naše designy získávají ocenění (ŠKODA Transportation, Mikroelektronika, AMV technics)"
+    },
+    "features": {
+      "tagline": "Naše služby",
+      "title1": "Řešení, která",
+      "title2": "jdou do výroby",
+      "description": "Propojujeme originální design s bezchybnou konstrukcí. Zaručujeme 100% vyrobitelnost za cenu rozumných výrobních nákladů.",
+      "f1": {
+        "title": "Design a grafika",
+        "desc": "Dáváme výrobkům novou myšlenku a originální tvar. Zpracujeme návrhy od prvotních skic až po 3D počítačové modely."
+      },
+      "f2": {
+        "title": "Konstrukční řešení",
+        "desc": "Zpracováváme projekty ve 3D včetně reverzního inženýrství. Navrhneme optimální technologii výroby od plastů po hliníkové odlitky."
+      },
+      "f3": {
+        "title": "Podpora výroby",
+        "desc": "Naše práce nekončí návrhem. Pomáháme s výběrem dodavatelů, optimalizací dílů a poskytujeme podporu při přípravě výroby."
+      },
+      "more": "Více o našem procesu"
+    },
+    "stats": {
+      "s1": "Zkušenosti od roku 1990",
+      "s2": "Obory působnosti (Medicína, Transport...)",
+      "s3": "Získaná ocenění za design",
+      "s4": "Úspěšně realizovaných projektů"
+    },
+    "cta": {
+      "title": "Máte nápad na nový výrobek?",
+      "description": "Zašlete nám poptávku nebo si sjednejte schůzku v naší kanceláři v Praze. Rádi s vámi probereme rozsah práce a připravíme cenovou nabídku.",
+      "btn": "Kontaktujte nás"
+    }
+  },
+    "services": {
+    "tagline": "Co děláme",
+    "title1": "Naše",
+    "title2": "Služby",
+    "description": "Poskytujeme klientům komplexní servis od návrhu nového výrobku, přes jeho konstrukční řešení až po implementaci do výroby.",
+    "s1": {
+      "title": "Průzkum trhu a skici",
+      "desc": "Jako první provádíme rešerši konkurenčních výrobků. Na jejím základě připravíme několik odlišných tvarových řešení formou skic, ze kterých si vyberete tu nejlepší variantu.",
+      "f1": "Rešerše trhu",
+      "f2": "Analýza konkurence",
+      "f3": "Kreativní nápady",
+      "f4": "Tvorba prvotních skic"
+    },
+    "s2": {
+      "title": "Detailní design a grafika",
+      "desc": "Dáváme výrobku originální tvar a myšlenku. Rozpracujeme vybranou skicu do detailů včetně ovládacích prvků, úchopových částí a barevného či grafického řešení.",
+      "f1": "Originální tvarování",
+      "f2": "Ergonomické prvky",
+      "f3": "Barevné řešení",
+      "f4": "3D počítačové vizualizace"
+    },
+    "s3": {
+      "title": "Konstrukční řešení",
+      "desc": "Zpracováváme detailní 3D modely v programech Pro Engineer nebo SolidWorks. Garantujeme 100% vyrobitelnost a provádíme i pevnostní analýzy namáhaných uzlů.",
+      "f1": "3D modelování",
+      "f2": "Pevnostní analýzy",
+      "f3": "Návrh technologie výroby",
+      "f4": "Záruka vyrobitelnosti"
+    },
+    "s4": {
+      "title": "Reverzní inženýrství",
+      "desc": "Vytváříme 3D elektronické modely na základě hotového fyzického výrobku. Ideální pro složité, tvarově nedefinovatelné díly a ergonomické části bez tvarového omezení.",
+      "f1": "Skenování fyzických modelů",
+      "f2": "Modelování volných ploch",
+      "f3": "Složité tvarové díly",
+      "f4": "Definice povrchů"
+    },
+    "s5": {
+      "title": "Výkresová dokumentace",
+      "desc": "Skládáme díly do logických montážních sestav a vytváříme kompletní výkresovou dokumentaci, která přímo slouží jako podklad pro výrobní a montážní postupy.",
+      "f1": "2D výkresy",
+      "f2": "Montážní sestavy",
+      "f3": "Výrobní postupy",
+      "f4": "Data pro prototypy"
+    },
+    "s6": {
+      "title": "Podpora výroby",
+      "desc": "Pomáháme s poptávkovým řízením na výrobu nástrojů a dílů. Poskytujeme plnou podporu, kontrolujeme zpracování a operativně řešíme problémy s dodavateli.",
+      "f1": "Poptávková řízení",
+      "f2": "Kontrola výrobních nástrojů",
+      "f3": "Optimalizace dílů",
+      "f4": "Aktualizace 3D modelů"
+    },
+    "more": "Detailní postup vývoje",
+    "cta": {
+      "title": "Máte nápad na nový výrobek?",
+      "desc": "Rádi vás pozveme na schůzku a probereme rozsah práce. Zpracujeme vám pevnou cenovou nabídku rozdělenou na jednotlivé etapy vývoje.",
+      "btn": "Sjednat schůzku"
+    }
+  },
+  "cooperation": {
+    "tagline": "Proces vývoje",
+    "title1": "Jak probíhá",
+    "title2": "spolupráce",
+    "description": "U většiny nových výrobků se zúčastníme celého vývojového procesu. Náš postup je navržen tak, aby vás provedl od první schůzky a prvotní skicy až po finální hotový výrobek.",
+    "steps": {
+      "s1": {
+        "title": "Poptávka a skicy",
+        "desc": "Ujasníme si rozsah práce a připravíme pevnou cenovou nabídku. Následně provedeme průzkum trhu a předložíme několik designových skic k výběru."
+      },
+      "s2": {
+        "title": "Detailní design",
+        "desc": "Vybranou variantu rozpracujeme do detailů včetně ovládacích prvků a barevného řešení. Výstupem je 3D model poskytující přesnou prostorovou představu."
+      },
+      "s3": {
+        "title": "Konstrukce a dokumentace",
+        "desc": "Zpracujeme detailní konstrukční řešení ve 3D se 100% zárukou vyrobitelnosti. Připravíme kompletní výkresovou dokumentaci a montážní sestavy."
+      },
+      "s4": {
+        "title": "Podpora výroby",
+        "desc": "Pomůžeme s poptávkovým řízením na výrobu dílů, kontrolujeme zpracování nástrojů a aktualizujeme 3D modely až do úspěšného spuštění výroby."
+      }
+    },
+    "benefits": {
+      "title": "Proč vyvíjet s námi?",
+      "b1": "Komplexní servis od návrhu po výrobu",
+      "b2": "Pevná cenová nabídka rozdělená na etapy",
+      "b3": "100% záruka vyrobitelnosti výrobku",
+      "b4": "Zkušenosti v oboru již od roku 1990",
+      "b5": "Oceněný design (ŠKODA, Mikroelektronika)",
+      "b6": "Špičkové softwarové zázemí (Pro Engineer, SolidWorks)",
+      "desc": "Naší největší radostí je, když se s vámi nakonec sejdeme nad hotovým, úspěšným výrobkem.",
+      "btn": "Sjednat schůzku"
+    }
+   },
+  "projects": {
+    "tagline": "Naše práce",
+    "title1": "Ukázky",
+    "title2": "projektů",
+    "description": "Za uplynulé roky jsme přivedli k životu nejrůznější projekty, které spojuje jedinečný tvar, kvalitní konstrukce a rozumné výrobní náklady.",
+    "categories": {
+      "all": "Vše",
+      "transport": "Transport a stroje",
+      "medicine": "Medicína",
+      "electronics": "Elektronika",
+      "weapons_furniture": "Zbraně a nábytek",
+      "demo": "3D Demo"
+    },
+    "p5": {
+      "title": "Interaktivní 3D Konfigurátor",
+      "client": "Exact Technology (Demo)",
+      "desc": "Ukázka integrace interaktivních 3D modelů přímo do webového rozhraní pro lepší prezentaci technických detailů."
+    },
+    "p1": {
+      "title": "Design v oblasti transportu",
+      "client": "ŠKODA Transportation",
+      "desc": "Komplexní návrh a konstrukční řešení dopravních prostředků. Za naši práci v této oblasti jsme získali prestižní ocenění Vynikající výrobek roku 2007."
+    },
+    "p2": {
+      "title": "Průmyslový design elektroniky",
+      "client": "Mikroelektronika",
+      "desc": "Vývoj designu elektronických zařízení s důrazem na čistotu řešení a vyrobitelnost. Projekt byl rovněž oceněn jako Vynikající výrobek roku 2007."
+    },
+    "p3": {
+      "title": "Lékařské přístroje a technika",
+      "client": "AMV technics",
+      "desc": "Propojení inovativního designu s přísnými nároky na konstrukci v medicínském prostředí. Náš návrh získal ocenění Medical Fair Award Brno 2008."
+    },
+    "p4": {
+      "title": "Ergonomické tvarování a reverzní inženýrství",
+      "client": "Různí klienti",
+      "desc": "Využití modelování ve volných plochách pro složité tvarové díly. Tvoříme ergonomické části bez tvarového omezení, jako jsou pažby zbraní, rukojeti či židle."
+    },
+    "more": "Zobrazit v galerii",
+    "loadMore": "Zobrazit další",
+    "searchPlaceholder": "Hledat projekty (název, klient, štítky)...",
+    "noResults": "Nebyly nalezeny žádné projekty odpovídající vašemu vyhledávání.",
+    "cta": {
+      "title": "Máte nápad na nový výrobek?",
+      "desc": "Ať už jde o obráběcí stroj, domácí spotřebič nebo sportovní potřeby, rádi se s vámi setkáme a navrhneme optimální design i technologii výroby.",
+      "btn": "Poptat projekt"
+    }
+  },
+  "about": {
+    "tagline": "O nás",
+    "title1": "Propojujeme",
+    "title2": "design a konstrukci",
+    "description": "Poskytujeme klientům komplexní servis od návrhu nového výrobku, přes jeho konstrukční řešení až po implementaci do výroby [1].",
+    "story": {
+      "title": "Náš příběh",
+      "p1": "Naše zkušenosti se datují již od roku 1990, kdy jsme začínali jako designové studio [1]. Postupem času jsme si uvědomili, že pro perfektní výrobek je třeba úzce propojit design s konstrukcí [1].",
+      "p2": "Proto jsme v roce 2001 založili společnost EXACT Technology s.r.o. [1]. Za uplynulé roky jsme přivedli k životu nespočet projektů z dopravy, medicíny, strojírenství i spotřebního zboží, vždy s cílem zajistit jedinečný tvar a konkurenceschopnost na trhu [1]."
+    },
+    "stats": {
+      "s1": "Zkušenosti v designu od roku 1990",
+      "s2": "Založení EXACT Technology v r. 2001",
+      "s3": "100% záruka vyrobitelnosti",
+      "s4": "Projekty v 8+ různých odvětvích"
+    },
+    "values": {
+      "title": "Naše filozofie",
+      "description": "Principy, na kterých stavíme vývoj každého nového výrobku.",
+      "v1": {
+        "title": "Originální myšlenka",
+        "desc": "Každému výrobku dáváme novou myšlenku, originální tvar a čistotu řešení [2]. Design vždy ladíme do posledního detailu [3]."
+      },
+      "v2": {
+        "title": "Garantovaná vyrobitelnost",
+        "desc": "Naše konstrukční zkušenosti dávají 100% záruku vyrobitelnosti [4]. Zaručujeme, že design bude plně funkční bez zbytečných vícenákladů [3]."
+      },
+      "v3": {
+        "title": "Péče o každý produkt",
+        "desc": "Každý nový výrobek bereme jako své dítě [5]. Staráme se o něj s největší péčí od prvotní skicy až po spuštění sériové výroby [5]."
+      },
+      "v4": {
+        "title": "Komplexní přístup",
+        "desc": "Neodevzdáváme jen obrázky. Tvoříme přesné 3D modely [6], detailní výkresovou dokumentaci [4] a pomáháme s výběrem dodavatelů [5, 7]."
+      }
+    },
+    "cta": {
+      "title": "Máte nápad na nový výrobek?",
+      "desc": "Rádi vás přivítáme v naší kanceláři, kde s vámi probereme všechny požadavky a detaily pro úspěšný start vývoje [8, 9].",
+      "btn": "Sjednat schůzku"
+    }
+  },
+  "contact": {
+    "tagline": "Kontakt",
+    "title1": "Máte nápad na",
+    "title2": "nový výrobek?",
+    "description": "Napište nám s poptávkou na vývoj nového výrobku. Rádi si s vámi ujasníme rozsah práce. Upozorňujeme, že schůzku v kanceláři je nutné sjednat předem.",
+    "info": {
+      "title": "Kontaktní údaje",
+      "address": {
+        "title": "Adresa kanceláře",
+        "val": "Kovriginova 1684/1<br />147 00 Praha 4<br /><br /><strong>Fakturační adresa:</strong><br />EXACT Technology, s.r.o.<br />Ocelkova 643/20, 198 00 Praha 9<br />IČO: 26 71 20 24",
+        "mapLink": "Zobrazit na mapě"
+      },
+      "email": {
+        "title": "E-mail a web",
+        "val1": "info@exact-tech.cz",
+        "val2": "www.exact-tech.cz"
+      },
+      "phone": {
+        "title": "Telefon",
+        "val": "+420 234 139 884",
+        "desc": "Pro sjednání schůzky volejte"
+      },
+      "quick": "Potřebujete probrat váš projekt?",
+      "call": "Sjednejte si schůzku"
+    },
+    "form": {
+      "title": "Zašlete nám poptávku",
+      "success": "Děkujeme za zprávu!",
+      "successDesc": "Vaše poptávka byla úspěšně odeslána. Náš tým se vám brzy ozve pro upřesnění rozsahu práce a případné sjednání osobní schůzky.",
+      "sendAnother": "Odeslat další zprávu",
+      "firstName": "Jméno",
+      "lastName": "Příjmení",
+      "email": "E-mail",
+      "company": "Společnost (volitelné)",
+      "message": "Představa o projektu a rozsahu služeb",
+      "submit": "Odeslat poptávku",
+      "consent": "Odesláním formuláře souhlasíte se zpracováním osobních údajů.",
+      "placeholders": {
+        "firstName": "Jan",
+        "lastName": "Novák",
+        "email": "jan.novak@firma.cz",
+        "company": "Název vaší společnosti",
+        "message": "Popište nám svůj nápad na nový výrobek..."
+      }
+    }
+  },
+  "projectDetail": {
+    "backToProjects": "Zpět na projekty",
+    "aboutProject": "O projektu",
+    "technologies": "Použité technologie",
+    "keyResults": "Klíčové výsledky",
+    "process": "Vývojový proces",
+    "challenges": "Technické výzvy",
+    "interestedBtn": "Mám zájem o podobný projekt",
+    "gallery": "Galerie projektu",
+    "p1": {
+      "fullDescription": "Pro ŠKODA Transportation jsme realizovali komplexní návrh designu a konstrukční řešení pro nové generace dopravních prostředků. Projekt vyžadoval skloubení moderního vzhledu s extrémními nároky na bezpečnost, aerodynamiku a životnost v náročném provozu.",
+      "process": "Začali jsme hloubkovým průzkumem ergonomie a toku cestujících. Následovaly desítky skic exteriéru i interiéru. Vybrané varianty byly převedeny do precizních 3D modelů v Pro Engineer, kde jsme ladili každý detail od aerodynamických ploch po uchycení vnitřních panelů.",
+      "challenges": "Největší výzvou bylo dodržení přísných bezpečnostních norem při zachování lehkosti designu. Museli jsme vyvinout speciální konstrukční uzly pro snížení vibrací a hluku, což vyžadovalo pokročilé simulace a optimalizaci materiálů.",
+      "results": [
+        "Získání ocenění Vynikající výrobek roku 2007",
+        "Zlepšení aerodynamiky o 12 % oproti předchozí generaci",
+        "Plná certifikace pro mezinárodní železniční provoz",
+        "Pozitivní ohlasy od cestujících i personálu"
+      ]
+    },
+    "p2": {
+      "fullDescription": "Spolupráce s firmou Mikroelektronika se zaměřila na novou řadu odbavovacích terminálů. Cílem bylo vytvořit nadčasový design, který bude odolný proti vandalismu, ale zároveň intuitivní pro uživatele všech věkových kategorií.",
+      "process": "Vývoj probíhal v úzké kooperaci s elektroniky. Design musel respektovat vnitřní uspořádání komponent. Vytvořili jsme několik prototypů pro testování ergonomie ovládání a čitelnosti displejů v různých světelných podmínkách.",
+      "challenges": "Museli jsme vyřešit odvod tepla z výkonné elektroniky v uzavřeném, antivandalovém šasi bez viditelných větracích otvorů. Použili jsme inovativní hliníkové odlitky, které slouží zároveň jako chladič i nosná konstrukce.",
+      "results": [
+        "Ocenění Vynikající výrobek roku 2007",
+        "Zvýšení rychlosti odbavení cestujících o 15 %",
+        "Extrémní odolnost potvrzená náročnými testy",
+        "Modulární konstrukce pro snadný servis"
+      ]
+    },
+    "p3": {
+      "fullDescription": "Pro AMV technics jsme vyvinuli design a konstrukci specializovaných lékařských přístrojů. V medicíně je design nejen o estetice, ale především o sterilitě, snadné údržbě a absolutní spolehlivosti.",
+      "process": "Proces zahrnoval konzultace s lékařským personálem přímo v provozu. Návrhy jsme ladili s ohledem na snadnou dezinfekci (minimalizace spár) a intuitivní rozmístění ovládacích prvků pro krizové situace.",
+      "challenges": "Hlavní výzvou bylo použití materiálů odolných vůči agresivním chemikáliím používaným při sterilizaci, které zároveň umožňují vytvořit organické, ergonomické tvary. Použili jsme pokročilé modelování ve volných plochách.",
+      "results": [
+        "Získání prestižního Medical Fair Award Brno 2008",
+        "Výrazné zkrácení doby čištění a sterilizace přístroje",
+        "Ergonomie oceněná koncovými uživateli (lékaři)",
+        "Úspěšný vstup na náročné zahraniční trhy"
+      ]
+    },
+    "p4": {
+      "fullDescription": "Tento projekt demonstruje naši sílu v modelování složitých organických tvarů. Pomocí reverzního inženýrství jsme digitalizovali ručně tvořené modely a převedli je do precizních technických dat pro výrobu.",
+      "process": "Využíváme 3D skenování pro zachycení ideální ergonomie (např. pažby zbraně nebo rukojeti). Tato data pak v SolidWorks čistíme a doplňujeme o vnitřní konstrukci, upevňovací body a technologické detaily pro vstřikování plastů nebo CNC obrábění.",
+      "challenges": "Převod organického tvaru na technický model bez ztráty 'duše' a ergonomických vlastností původního návrhu. Museli jsme zajistit perfektní návaznost ploch (G2 kontinuita) pro bezchybný vzhled po lakování.",
+      "results": [
+        "Zkrácení vývoje složitých tvarů o 40 %",
+        "100% shoda s ergonomickými požadavky",
+        "Možnost rychlých úprav a variant designu",
+        "Data připravená přímo pro výrobu forem"
+      ]
+    },
+    "p5": {
+      "fullDescription": "Tento demo projekt ukazuje, jak lze využít moderní webové technologie (React Three Fiber) k prezentaci složitých technických celků. Klient si může produkt prohlédnout ze všech stran ještě před zahájením výroby.",
+      "process": "Vytvoříme precizní 3D model v konstrukčním softwaru, který následně optimalizujeme pro webové zobrazení při zachování všech důležitých detailů a textur.",
+      "challenges": "Hlavní výzvou je optimalizace geometrie pro plynulý běh i na mobilních zařízeních a nastavení realistického nasvícení, které věrně simuluje materiály jako kov nebo plast.",
+      "results": [
+        "Okamžitá vizuální zpětná vazba pro klienta",
+        "Snížení počtu fyzických prototypů",
+        "Zvýšení prodejního potenciálu produktu",
+        "Interaktivní návody a servisní manuály"
+      ]
+    }
+  },
+  "serviceDetail": {
+    "backToServices": "Zpět na služby",
+    "serviceDetail": "Detail služby",
+    "whatYouGet": "Co získáte",
+    "technologies": "Technologie a software",
+    "requestService": "Poptat tuto službu",
+    "fullDescription": "Náš přístup ke konstrukci je založen na úzkém propojení líbivého designu s kvalitním technologickým řešením. Projekty zpracováváme ve 3D programech Pro Engineer a SolidWorks. Ať už potřebujete navrhnout obráběný díl, plastový výlisek nebo složitý ergonomický tvar pomocí reverzního inženýrství, dodáme vám přesná výrobní data a dokumentaci, která zaručí bezproblémovou výrobu.",
+    "features": {
+      "f1": "Zpracování projektů ve 3D (Pro Engineer, SolidWorks)",
+      "f2": "Návrh optimální technologie (plasty, plechy, odlitky)",
+      "f3": "Reverzní inženýrství a modelování ve volných plochách",
+      "f4": "Pevnostní analýzy namáhaných uzlů",
+      "f5": "Tvorba kompletní výkresové dokumentace a sestav",
+      "f6": "100% záruka vyrobitelnosti bez zbytečných vícenákladů"
+    }
+  }
+}

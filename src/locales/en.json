@@ -1,0 +1,399 @@
+{
+  "header": {
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "cooperation": "Cooperation",
+      "projects": "Projects",
+      "about": "About Us"
+    },
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "footer": {
+    "description": "We provide clients with comprehensive service from new product design, through its structural solution to implementation into production.",
+    "services": {
+      "title": "Services",
+      "research": "Market Research",
+      "design": "Design & Graphics",
+      "construction": "Structural Solutions",
+      "reverse": "Reverse Engineering",
+      "documentation": "Drawing Documentation",
+      "production": "Production Support"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "projects": "Projects",
+      "process": "Process",
+      "references": "References",
+      "awards": "Awards",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Kovriginova 1684/1, 147 00 Prague 4",
+      "phone": "+420 234 139 884",
+      "email": "info@exact-tech.cz"
+    },
+    "copyright": "© EXACT Technology, s.r.o. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Comprehensive development of your product",
+      "title1": "From initial",
+      "title2": "design",
+      "title3": "to production",
+      "description": "We provide comprehensive service from innovative design of a new product, through precise 3D structural solutions to successful implementation into production.",
+      "servicesBtn": "Our Services",
+      "consultationBtn": "Schedule a Meeting"
+    },
+    "marquee": {
+      "trusted": "Our designs win awards (ŠKODA Transportation, Mikroelektronika, AMV technics)"
+    },
+    "features": {
+      "tagline": "Our Services",
+      "title1": "Solutions that",
+      "title2": "go into production",
+      "description": "We connect original design with flawless construction. We guarantee 100% manufacturability at reasonable production costs.",
+      "f1": {
+        "title": "Design & Graphics",
+        "desc": "We give products a new idea and original shape. We process designs from initial sketches to 3D computer models."
+      },
+      "f2": {
+        "title": "Structural Solutions",
+        "desc": "We process projects in 3D including reverse engineering. We propose optimal production technology from plastics to aluminum castings."
+      },
+      "f3": {
+        "title": "Production Support",
+        "desc": "Our work doesn't end with the design. We help with supplier selection, part optimization, and provide support during production preparation."
+      },
+      "more": "More about our process"
+    },
+    "stats": {
+      "s1": "Experience since 1990",
+      "s2": "Fields of activity (Medicine, Transport...)",
+      "s3": "Design awards received",
+      "s4": "Successfully realized projects"
+    },
+    "cta": {
+      "title": "Have an idea for a new product?",
+      "description": "Send us an inquiry or schedule a meeting at our office in Prague. We'll be happy to discuss the scope of work and prepare a price offer.",
+      "btn": "Contact Us"
+    }
+  },
+  "services": {
+    "tagline": "What We Do",
+    "title1": "Our",
+    "title2": "Services",
+    "description": "We provide clients with comprehensive service from new product design, through its structural solution to implementation into production.",
+    "s1": {
+      "title": "Market Research & Sketches",
+      "desc": "First, we conduct research on competing products. Based on it, we prepare several different shape solutions in the form of sketches, from which you choose the best variant.",
+      "f1": "Market Research",
+      "f2": "Competitor Analysis",
+      "f3": "Creative Ideas",
+      "f4": "Initial Sketches"
+    },
+    "s2": {
+      "title": "Detailed Design & Graphics",
+      "desc": "We give the product an original shape and idea. We develop the selected sketch into details including controls, grip parts, and color or graphic solutions.",
+      "f1": "Original Shaping",
+      "f2": "Ergonomic Elements",
+      "f3": "Color Solutions",
+      "f4": "3D Computer Visualizations"
+    },
+    "s3": {
+      "title": "Structural Solutions",
+      "desc": "We process detailed 3D models in Pro Engineer or SolidWorks. We guarantee 100% manufacturability and perform strength analyses of stressed nodes.",
+      "f1": "3D Modeling",
+      "f2": "Strength Analyses",
+      "f3": "Production Tech Design",
+      "f4": "Manufacturability Guarantee"
+    },
+    "s4": {
+      "title": "Reverse Engineering",
+      "desc": "We create 3D electronic models based on a finished physical product. Ideal for complex, shape-undefinable parts and ergonomic parts without shape limitations.",
+      "f1": "Physical Model Scanning",
+      "f2": "Freeform Surface Modeling",
+      "f3": "Complex Shape Parts",
+      "f4": "Surface Definition"
+    },
+    "s5": {
+      "title": "Drawing Documentation",
+      "desc": "We assemble parts into logical assembly sets and create complete drawing documentation, which directly serves as a basis for production and assembly procedures.",
+      "f1": "2D Drawings",
+      "f2": "Assembly Sets",
+      "f3": "Production Procedures",
+      "f4": "Prototype Data"
+    },
+    "s6": {
+      "title": "Production Support",
+      "desc": "We help with the inquiry process for the production of tools and parts. We provide full support, check processing, and operationally solve problems with suppliers.",
+      "f1": "Inquiry Processes",
+      "f2": "Production Tool Control",
+      "f3": "Part Optimization",
+      "f4": "3D Model Updates"
+    },
+    "more": "Detailed Development Process",
+    "cta": {
+      "title": "Have an idea for a new product?",
+      "desc": "We'd love to invite you to a meeting to discuss the scope of work. We'll prepare a fixed price offer divided into individual development stages.",
+      "btn": "Schedule a Meeting"
+    }
+  },
+  "cooperation": {
+    "tagline": "Development Process",
+    "title1": "How the",
+    "title2": "cooperation works",
+    "description": "For most new products, we participate in the entire development process. Our procedure is designed to guide you from the first meeting and initial sketch to the final finished product.",
+    "steps": {
+      "s1": {
+        "title": "Inquiry & Sketches",
+        "desc": "We clarify the scope of work and prepare a fixed price offer. Subsequently, we conduct market research and present several design sketches for selection."
+      },
+      "s2": {
+        "title": "Detailed Design",
+        "desc": "We develop the selected variant into details including controls and color solutions. The output is a 3D model providing a precise spatial idea."
+      },
+      "s3": {
+        "title": "Construction & Documentation",
+        "desc": "We process detailed structural solutions in 3D with a 100% manufacturability guarantee. We prepare complete drawing documentation and assembly sets."
+      },
+      "s4": {
+        "title": "Production Support",
+        "desc": "We help with the inquiry process for part production, check tool processing, and update 3D models until successful production launch."
+      }
+    },
+    "benefits": {
+      "title": "Why develop with us?",
+      "b1": "Comprehensive service from design to production",
+      "b2": "Fixed price offer divided into stages",
+      "b3": "100% product manufacturability guarantee",
+      "b4": "Experience in the field since 1990",
+      "b5": "Award-winning design (ŠKODA, Mikroelektronika)",
+      "b6": "Top-notch software background (Pro Engineer, SolidWorks)",
+      "desc": "Our greatest joy is when we finally meet with you over a finished, successful product.",
+      "btn": "Schedule a Meeting"
+    }
+  },
+  "projects": {
+    "tagline": "Our Work",
+    "title1": "Project",
+    "title2": "Showcase",
+    "description": "Over the years, we have brought various projects to life, united by unique shape, quality construction, and reasonable production costs.",
+    "categories": {
+      "all": "All",
+      "transport": "Transport & Machines",
+      "medicine": "Medicine",
+      "electronics": "Electronics",
+      "weapons_furniture": "Weapons & Furniture",
+      "demo": "3D Demo"
+    },
+    "p5": {
+      "title": "Interactive 3D Configurator",
+      "client": "Exact Technology (Demo)",
+      "desc": "Showcase of integrating interactive 3D models directly into the web interface for better presentation of technical details."
+    },
+    "p1": {
+      "title": "Design in the field of transport",
+      "client": "ŠKODA Transportation",
+      "desc": "Comprehensive design and structural solution for transport vehicles. For our work in this area, we received the prestigious Outstanding Product of the Year 2007 award."
+    },
+    "p2": {
+      "title": "Industrial design of electronics",
+      "client": "Mikroelektronika",
+      "desc": "Development of electronic device design with emphasis on solution purity and manufacturability. The project was also awarded as Outstanding Product of the Year 2007."
+    },
+    "p3": {
+      "title": "Medical devices and technology",
+      "client": "AMV technics",
+      "desc": "Connecting innovative design with strict requirements for construction in the medical environment. Our design won the Medical Fair Award Brno 2008."
+    },
+    "p4": {
+      "title": "Ergonomic shaping & Reverse Engineering",
+      "client": "Various clients",
+      "desc": "Using freeform surface modeling for complex shape parts. We create ergonomic parts without shape limitations, such as gun stocks, handles, or chairs."
+    },
+    "more": "View in Gallery",
+    "loadMore": "Load more",
+    "searchPlaceholder": "Search projects (title, client, tags)...",
+    "noResults": "No projects found matching your search criteria.",
+    "cta": {
+      "title": "Have an idea for a new product?",
+      "desc": "Whether it's a machine tool, a household appliance, or sports equipment, we'd love to meet you and propose optimal design and production technology.",
+      "btn": "Inquire Project"
+    }
+  },
+  "about": {
+    "tagline": "About Us",
+    "title1": "Connecting",
+    "title2": "design and construction",
+    "description": "We provide clients with comprehensive service from new product design, through its structural solution to implementation into production.",
+    "story": {
+      "title": "Our Story",
+      "p1": "Our experience dates back to 1990, when we started as a design studio. Over time, we realized that for a perfect product, it is necessary to closely link design with construction.",
+      "p2": "Therefore, in 2001, we founded EXACT Technology s.r.o. Over the years, we have brought to life countless projects from transport, medicine, engineering, and consumer goods, always with the goal of ensuring a unique shape and competitiveness on the market."
+    },
+    "stats": {
+      "s1": "Design experience since 1990",
+      "s2": "Founded EXACT Technology in 2001",
+      "s3": "100% manufacturability guarantee",
+      "s4": "Projects in 8+ different industries"
+    },
+    "values": {
+      "title": "Our Philosophy",
+      "description": "Principles on which we build the development of every new product.",
+      "v1": {
+        "title": "Original Idea",
+        "desc": "We give every product a new idea, original shape, and solution purity. We always fine-tune the design to the last detail."
+      },
+      "v2": {
+        "title": "Guaranteed Manufacturability",
+        "desc": "Our structural experience gives a 100% manufacturability guarantee. We guarantee that the design will be fully functional without unnecessary extra costs."
+      },
+      "v3": {
+        "title": "Care for Every Product",
+        "desc": "We take every new product as our child. We take care of it with the greatest care from the initial sketch to the launch of mass production."
+      },
+      "v4": {
+        "title": "Comprehensive Approach",
+        "desc": "We don't just hand over pictures. We create precise 3D models, detailed drawing documentation, and help with supplier selection."
+      }
+    },
+    "cta": {
+      "title": "Have an idea for a new product?",
+      "desc": "We'd love to welcome you to our office, where we'll discuss all requirements and details for a successful development start.",
+      "btn": "Schedule a Meeting"
+    }
+  },
+  "contact": {
+    "tagline": "Contact",
+    "title1": "Have an idea for a",
+    "title2": "new product?",
+    "description": "Write to us with an inquiry for the development of a new product. We'll be happy to clarify the scope of work. Please note that a meeting in the office must be arranged in advance.",
+    "info": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Office Address",
+        "val": "Kovriginova 1684/1<br />147 00 Prague 4<br /><br /><strong>Billing Address:</strong><br />EXACT Technology, s.r.o.<br />Ocelkova 643/20, 198 00 Prague 9<br />ID: 26 71 20 24",
+        "mapLink": "View on map"
+      },
+      "email": {
+        "title": "Email & Web",
+        "val1": "info@exact-tech.cz",
+        "val2": "www.exact-tech.cz"
+      },
+      "phone": {
+        "title": "Phone",
+        "val": "+420 234 139 884",
+        "desc": "Call to schedule a meeting"
+      },
+      "quick": "Need to discuss your project?",
+      "call": "Schedule a Meeting"
+    },
+    "form": {
+      "title": "Send Us an Inquiry",
+      "success": "Thank you for your message!",
+      "successDesc": "Your inquiry has been successfully sent. Our team will get back to you soon to clarify the scope of work and potentially arrange a personal meeting.",
+      "sendAnother": "Send another message",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "E-mail",
+      "company": "Company (optional)",
+      "message": "Idea of the project and scope of services",
+      "submit": "Send Inquiry",
+      "consent": "By submitting the form, you agree to the processing of personal data.",
+      "placeholders": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@company.com",
+        "company": "Your Company Name",
+        "message": "Describe your idea for a new product..."
+      }
+    }
+  },
+  "projectDetail": {
+    "backToProjects": "Back to projects",
+    "aboutProject": "About the project",
+    "technologies": "Technologies used",
+    "keyResults": "Key results",
+    "process": "Development Process",
+    "challenges": "Technical Challenges",
+    "interestedBtn": "I am interested in a similar project",
+    "gallery": "Project Gallery",
+    "p1": {
+      "fullDescription": "For ŠKODA Transportation, we implemented a comprehensive design and construction solution for new generations of transport vehicles. The project required combining a modern look with extreme demands for safety, aerodynamics, and durability in demanding operations.",
+      "process": "We started with in-depth research into ergonomics and passenger flow. This was followed by dozens of exterior and interior sketches. Selected variants were converted into precise 3D models in Pro Engineer, where we tuned every detail from aerodynamic surfaces to the attachment of internal panels.",
+      "challenges": "The biggest challenge was adhering to strict safety standards while maintaining design lightness. We had to develop special structural nodes to reduce vibration and noise, which required advanced simulations and material optimization.",
+      "results": [
+        "Winning the Outstanding Product of the Year 2007 award",
+        "12% improvement in aerodynamics compared to the previous generation",
+        "Full certification for international rail operations",
+        "Positive feedback from passengers and staff"
+      ]
+    },
+    "p2": {
+      "fullDescription": "The collaboration with Mikroelektronika focused on a new line of ticketing terminals. The goal was to create a timeless design that would be resistant to vandalism but at the same time intuitive for users of all ages.",
+      "process": "Development took place in close cooperation with electronics engineers. The design had to respect the internal arrangement of components. We created several prototypes to test control ergonomics and display readability in various lighting conditions.",
+      "challenges": "We had to solve heat dissipation from high-performance electronics in a closed, anti-vandal chassis without visible ventilation holes. We used innovative aluminum castings that serve as both a heat sink and a supporting structure.",
+      "results": [
+        "Outstanding Product of the Year 2007 award",
+        "15% increase in passenger check-in speed",
+        "Extreme durability confirmed by demanding tests",
+        "Modular construction for easy service"
+      ]
+    },
+    "p3": {
+      "fullDescription": "For AMV technics, we developed the design and construction of specialized medical devices. In medicine, design is not just about aesthetics, but primarily about sterility, easy maintenance, and absolute reliability.",
+      "process": "The process included consultations with medical staff directly in operation. We tuned the designs with regard to easy disinfection (minimizing gaps) and intuitive placement of controls for crisis situations.",
+      "challenges": "The main challenge was the use of materials resistant to aggressive chemicals used in sterilization, which at the same time allow for the creation of organic, ergonomic shapes. We used advanced freeform surface modeling.",
+      "results": [
+        "Winning the prestigious Medical Fair Award Brno 2008",
+        "Significant reduction in device cleaning and sterilization time",
+        "Ergonomics appreciated by end users (doctors)",
+        "Successful entry into demanding foreign markets"
+      ]
+    },
+    "p4": {
+      "fullDescription": "This project demonstrates our strength in modeling complex organic shapes. Using reverse engineering, we digitized hand-made models and converted them into precise technical data for production.",
+      "process": "We use 3D scanning to capture ideal ergonomics (e.g., a weapon stock or handle). We then clean this data in SolidWorks and supplement it with internal construction, mounting points, and technological details for plastic injection or CNC machining.",
+      "challenges": "Converting an organic shape into a technical model without losing the 'soul' and ergonomic properties of the original design. We had to ensure perfect surface continuity (G2 continuity) for a flawless appearance after painting.",
+      "results": [
+        "40% reduction in the development of complex shapes",
+        "100% compliance with ergonomic requirements",
+        "Possibility of quick adjustments and design variants",
+        "Data prepared directly for mold production"
+      ]
+    },
+    "p5": {
+      "fullDescription": "This demo project shows how modern web technologies (React Three Fiber) can be used to present complex technical assemblies. The client can view the product from all sides even before production begins.",
+      "process": "We create a precise 3D model in engineering software, which we then optimize for web display while maintaining all important details and textures.",
+      "challenges": "The main challenge is optimizing the geometry for smooth running even on mobile devices and setting up realistic lighting that faithfully simulates materials like metal or plastic.",
+      "results": [
+        "Immediate visual feedback for the client",
+        "Reduction in the number of physical prototypes",
+        "Increased sales potential of the product",
+        "Interactive instructions and service manuals"
+      ]
+    }
+  },
+  "serviceDetail": {
+    "backToServices": "Back to services",
+    "serviceDetail": "Service details",
+    "whatYouGet": "What you get",
+    "technologies": "Technology & Software",
+    "requestService": "Request this service",
+    "fullDescription": "Our approach to construction is based on a close link between attractive design and a high-quality technological solution. We process projects in 3D programs Pro Engineer and SolidWorks. Whether you need to design a machined part, a plastic molding, or a complex ergonomic shape using reverse engineering, we will deliver precise production data and documentation that guarantees trouble-free production.",
+    "features": {
+      "f1": "Project processing in 3D (Pro Engineer, SolidWorks)",
+      "f2": "Optimal technology design (plastics, sheets, castings)",
+      "f3": "Reverse engineering and freeform surface modeling",
+      "f4": "Strength analyses of stressed nodes",
+      "f5": "Creation of complete drawing documentation and assemblies",
+      "f6": "100% manufacturability guarantee without unnecessary extra costs"
+    }
+  }
+}
