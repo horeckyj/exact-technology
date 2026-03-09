@@ -1,5 +1,6 @@
 {
   "name": "react-example",
+  "homepage": "htthps://horeckyj.github.com/exact-technology/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +9,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
@@ -20,6 +23,7 @@
     "better-sqlite3": "^12.4.1",
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
+    "gh-pages": "^6.3.0",
     "i18next": "^25.8.14",
     "i18next-browser-languagedetector": "^8.2.1",
     "lucide-react": "^0.546.0",
