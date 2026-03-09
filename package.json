@@ -1,7 +1,6 @@
 {
   "name": "react-example",
   "homepage": "https://horeckyj.github.io/exact-technology/",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
