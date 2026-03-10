@@ -1,8 +1,16 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Code, Cloud, Shield, ChevronRight } from 'lucide-react';
+import { ArrowRight, Code, Cloud, Shield, ChevronRight, PaintBucket } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import Guys from '../../public/ExTech_Making_2.png';
+import Drawing from '../../public/ExTech_Drawing.png';
+import { partners } from "../data/partners";
+import { PartnersSection } from '../components/PartnersSection';
+
+type PartnersSectionProps = {
+  title: string;
+};
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
@@ -103,7 +111,7 @@ const Home: React.FC = () => {
               <motion.img
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&q=80&w=800"
+                src= {Guys}
                 alt="AI CAD Design"
                 className="absolute top-10 right-0 w-4/5 rounded-2xl shadow-2xl border border-white/10 z-20"
                 referrerPolicy="no-referrer"
@@ -111,7 +119,7 @@ const Home: React.FC = () => {
               <motion.img
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=800"
+                src= {Drawing}
                 alt="AI Manufacturing"
                 className="absolute bottom-10 left-0 w-3/5 rounded-2xl shadow-2xl border border-white/10 z-30"
                 referrerPolicy="no-referrer"
@@ -123,22 +131,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Image Gallery / Marquee Section */}
-      <section className="py-12 bg-slate-900 border-b border-slate-800 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-          <p className="text-center text-sm font-semibold text-slate-500 uppercase tracking-widest">{t('home.marquee.trusted')}</p>
-        </div>
-        <div className="flex gap-8 px-4 animate-[marquee_30s_linear_infinite] w-max">
-          {[...Array(4)].map((_, arrayIndex) => (
-            <React.Fragment key={arrayIndex}>
-              {[1, 2, 3, 4, 5].map((i) => (
-                <div key={`${arrayIndex}-${i}`} className="w-48 h-24 shrink-0 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-700 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                  <img src={`https://picsum.photos/seed/logo${i}/120/40`} alt={`Partner ${i}`} className="object-contain filter invert brightness-0" referrerPolicy="no-referrer" />
-                </div>
-              ))}
-            </React.Fragment>
-          ))}
-        </div>
-      </section>
+      <PartnersSection title={t("home.marquee.trusted")} />
 
       {/* Features Section with Images */}
       <section className="py-24 bg-slate-950 relative">
@@ -158,7 +151,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {[
               {
-                icon: <Code className="w-6 h-6 text-white" />,
+                icon: <PaintBucket className="w-6 h-6 text-white" />,
                 title: t('home.features.f1.title'),
                 description: t('home.features.f1.desc'),
                 image: 'https://images.unsplash.com/photo-1633167606207-d840b5070fc2?auto=format&fit=crop&q=80&w=800',

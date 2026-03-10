@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Logo from './Logo';
+import Logo from '../../public/logo.png';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,11 +25,11 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="flex items-center gap-2">
-              <Logo className="h-12 w-auto" />
-            </Link>
-          </div>
+            <div className="flex-shrink-0 flex items-center">
+              <Link to="/" className="flex items-center gap-2">
+                <img src={Logo} alt="EXACT Logo" className="h-auto w-auto" />
+              </Link>
+            </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">

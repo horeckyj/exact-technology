@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Logo from './Logo';
+import Logo from '../../public/logo.png';
+
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-6">
-              <Logo className="h-12 w-auto" />
+              <img src={Logo} alt="EXACT Logo" className="h-auto w-auto" />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed">
               {t('footer.description')}
