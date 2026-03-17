@@ -32,7 +32,7 @@
     },
     "contact": {
       "title": "Kontakt",
-      "address": "Kovriginova 1684/1, 147 00 Praha 4",
+      "address": "Ocelkova 643/20, 198 00 Praha 9",
       "phone": "+420 234 139 884",
       "email": "info@exact-tech.cz"
     },
@@ -277,8 +277,8 @@
     "info": {
       "title": "Kontaktní údaje",
       "address": {
-        "title": "Adresa kanceláře",
-        "val": "Kovriginova 1684/1<br />147 00 Praha 4<br /><br /><strong>Fakturační adresa:</strong><br />EXACT Technology, s.r.o.<br />Ocelkova 643/20, 198 00 Praha 9<br />IČO: 26 71 20 24",
+        "title": "Adresa",
+        "val": "<strong>Fakturační adresa:</strong><br />EXACT Technology, s.r.o.<br />Ocelkova 643/20, 198 00 Praha 9<br />IČO: 26 71 20 24",
         "mapLink": "Zobrazit na mapě"
       },
       "email": {
@@ -292,7 +292,7 @@
         "desc": "Pro sjednání schůzky volejte"
       },
       "quick": "Potřebujete probrat váš projekt?",
-      "call": "Sjednejte si schůzku"
+      "call": "Napište nám"
     },
     "form": {
       "title": "Zašlete nám poptávku",
