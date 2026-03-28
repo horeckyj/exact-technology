@@ -273,7 +273,7 @@
     "tagline": "Kontakt",
     "title1": "Máte nápad na",
     "title2": "nový výrobek?",
-    "description": "Napište nám s poptávkou na vývoj nového výrobku. Rádi si s vámi ujasníme rozsah práce. Upozorňujeme, že schůzku v kanceláři je nutné sjednat předem.",
+    "description": "Napište nám s poptávkou na vývoj nového výrobku.",
     "info": {
       "title": "Kontaktní údaje",
       "address": {
@@ -282,7 +282,7 @@
         "mapLink": "Zobrazit na mapě"
       },
       "email": {
-        "title": "E-mail a web",
+        "title": "E-mail",
         "val1": "info@exact-tech.cz",
         "val2": "www.exact-tech.cz"
       },

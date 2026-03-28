@@ -273,7 +273,7 @@
     "tagline": "Contact",
     "title1": "Have an idea for a",
     "title2": "new product?",
-    "description": "Write to us with an inquiry for the development of a new product. We'll be happy to clarify the scope of work. Please note that a meeting in the office must be arranged in advance.",
+    "description": "Write to us with an inquiry for the development of a new product. ",
     "info": {
       "title": "Contact Information",
       "address": {
@@ -282,7 +282,7 @@
         "mapLink": "View on map"
       },
       "email": {
-        "title": "Email & Web",
+        "title": "Email",
         "val1": "info@exact-tech.cz",
         "val2": "www.exact-tech.cz"
       },

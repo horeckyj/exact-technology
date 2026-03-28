@@ -84,17 +84,8 @@ const Contact: React.FC = () => {
                 <h3 className="text-lg font-bold text-white mb-2">{t('contact.info.email.title')}</h3>
                 <p className="text-slate-400 leading-relaxed font-light">
                   <a href="mailto:info@exact-tech.cz" className="hover:text-brand-400 transition-colors">{t('contact.info.email.val1')}</a><br />
-                  <a href="mailto:support@exact-tech.cz" className="hover:text-brand-400 transition-colors">{t('contact.info.email.val2')}</a>
                 </p>
               </motion.div>
-            </div>
-
-            <div className="mt-8 bg-slate-900 rounded-3xl p-8 border border-slate-800 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-              <p className="text-slate-400 font-light">{t('contact.info.quick')}</p>
-              <a href={`mailto:${t('contact.info.email.val1')}`} className="inline-flex items-center gap-2 font-bold text-lg text-white hover:text-brand-400 transition-colors group">
-                {t('contact.info.call')}
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
             </div>
           </motion.div>
         </div>
