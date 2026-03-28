@@ -231,11 +231,11 @@
     "tagline": "O nás",
     "title1": "Propojujeme",
     "title2": "design a konstrukci",
-    "description": "Poskytujeme klientům komplexní servis od návrhu nového výrobku, přes jeho konstrukční řešení až po implementaci do výroby [1].",
+    "description": "Poskytujeme klientům komplexní servis od návrhu nového výrobku, přes jeho konstrukční řešení až po implementaci do výroby.",
     "story": {
       "title": "Náš příběh",
-      "p1": "Naše zkušenosti se datují již od roku 1990, kdy jsme začínali jako designové studio [1]. Postupem času jsme si uvědomili, že pro perfektní výrobek je třeba úzce propojit design s konstrukcí [1].",
-      "p2": "Proto jsme v roce 2001 založili společnost EXACT Technology s.r.o. [1]. Za uplynulé roky jsme přivedli k životu nespočet projektů z dopravy, medicíny, strojírenství i spotřebního zboží, vždy s cílem zajistit jedinečný tvar a konkurenceschopnost na trhu [1]."
+      "p1": "Naše zkušenosti se datují již od roku 1990, kdy jsme začínali jako designové studio. Postupem času jsme si uvědomili, že pro perfektní výrobek je třeba úzce propojit design s konstrukcí.",
+      "p2": "Proto jsme v roce 2001 založili společnost EXACT Technology s.r.o.a uplynulé roky jsme přivedli k životu nespočet projektů z dopravy, medicíny, strojírenství i spotřebního zboží, vždy s cílem zajistit jedinečný tvar a konkurenceschopnost na trhu."
     },
     "stats": {
       "s1": "Zkušenosti v designu od roku 1990",
@@ -248,24 +248,24 @@
       "description": "Principy, na kterých stavíme vývoj každého nového výrobku.",
       "v1": {
         "title": "Originální myšlenka",
-        "desc": "Každému výrobku dáváme novou myšlenku, originální tvar a čistotu řešení [2]. Design vždy ladíme do posledního detailu [3]."
+        "desc": "Každému výrobku dáváme novou myšlenku, originální tvar a čistotu řešení. Design vždy ladíme do posledního detailu."
       },
       "v2": {
         "title": "Garantovaná vyrobitelnost",
-        "desc": "Naše konstrukční zkušenosti dávají 100% záruku vyrobitelnosti [4]. Zaručujeme, že design bude plně funkční bez zbytečných vícenákladů [3]."
+        "desc": "Naše konstrukční zkušenosti dávají 100% záruku vyrobitelnosti. Zaručujeme, že design bude plně funkční bez zbytečných vícenákladů."
       },
       "v3": {
         "title": "Péče o každý produkt",
-        "desc": "Každý nový výrobek bereme jako své dítě [5]. Staráme se o něj s největší péčí od prvotní skicy až po spuštění sériové výroby [5]."
+        "desc": "Každý nový výrobek bereme jako své dítě. Staráme se o něj s největší péčí od prvotní skicy až po spuštění sériové výroby."
       },
       "v4": {
         "title": "Komplexní přístup",
-        "desc": "Neodevzdáváme jen obrázky. Tvoříme přesné 3D modely [6], detailní výkresovou dokumentaci [4] a pomáháme s výběrem dodavatelů [5, 7]."
+        "desc": "Neodevzdáváme jen obrázky. Tvoříme přesné 3D modely, detailní výkresovou dokumentaci a pomáháme s výběrem dodavatelů."
       }
     },
     "cta": {
       "title": "Máte nápad na nový výrobek?",
-      "desc": "Rádi vás přivítáme v naší kanceláři, kde s vámi probereme všechny požadavky a detaily pro úspěšný start vývoje [8, 9].",
+      "desc": "Rádi vás přivítáme v naší kanceláři, kde s vámi probereme všechny požadavky a detaily pro úspěšný start vývoje.",
       "btn": "Sjednat schůzku"
     }
   },

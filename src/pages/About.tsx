@@ -146,7 +146,7 @@ const About: React.FC = () => {
               transition={{ delay: 0.1 }}
               className="text-xl text-slate-400 font-light"
             >
-              {t('about.values.desc')}
+              {t('about.values.description')}
             </motion.p>
           </div>
 
