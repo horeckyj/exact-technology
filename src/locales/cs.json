@@ -190,6 +190,7 @@
       "medicine": "Medicína",
       "electronics": "Elektronika",
       "weapons_furniture": "Zbraně a nábytek",
+      "other": "Ostatní projekty",
       "demo": "3D Demo"
     },
     "p5": {
@@ -323,6 +324,13 @@
     "process": "Vývojový proces",
     "challenges": "Technické výzvy",
     "interestedBtn": "Mám zájem o podobný projekt",
+    "dynamic": {
+      "process": "Od prvotních skic až po finální geometrii připravenou do výroby.",
+      "challenges": "Vyvážení estetiky, technických omezení a vyrobitelnosti.",
+      "r1": "Kompletně dodaný vizuální i konstrukční koncept.",
+      "r2": "Projekt připravený pro výrobu a implementaci.",
+      "r3": "Řešení ověřené podle požadavků klienta a kvalitativních cílů."
+    },
     "gallery": "Galerie projektu",
     "p1": {
       "fullDescription": "Pro ŠKODA Transportation jsme realizovali komplexní návrh designu a konstrukční řešení pro nové generace dopravních prostředků. Projekt vyžadoval skloubení moderního vzhledu s extrémními nároky na bezpečnost, aerodynamiku a životnost v náročném provozu.",
