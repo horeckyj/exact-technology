@@ -155,21 +155,21 @@ const Home: React.FC = () => {
                 title: t('home.features.f1.title'),
                 description: t('home.features.f1.desc'),
                 image: '/public/ExTech_Making_3.png',
-                path: '/sluzby/design-grafika'
+                path: '/spoluprace'
               },
               {
                 icon: <Cloud className="w-6 h-6 text-white" />,
                 title: t('home.features.f2.title'),
                 description: t('home.features.f2.desc'),
                 image: '/public/ExTech_Making.png',
-                path: '/sluzby/konstrukcni-reseni'
+                path: '/spoluprace'
               },
               {
                 icon: <Shield className="w-6 h-6 text-white" />,
                 title: t('home.features.f3.title'),
                 description: t('home.features.f3.desc'),
                 image: '/public/ExTech_Production_Medica.png',
-                path: '/sluzby/podpora-vyroby'
+                path: '/spoluprace'
               }
             ].map((feature, index) => (
               <motion.div

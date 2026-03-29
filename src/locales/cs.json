@@ -107,7 +107,7 @@
     },
     "s3": {
       "title": "Konstrukční řešení",
-      "desc": "Zpracováváme detailní 3D modely v programech Pro Engineer nebo SolidWorks. Garantujeme 100% vyrobitelnost a provádíme i pevnostní analýzy namáhaných uzlů.",
+      "desc": "Zpracováváme detailní 3D modely v programech Pro Engineer nebo SolidWorks. Garantujeme vyrobitelnost a provádíme i pevnostní analýzy namáhaných uzlů.",
       "f1": "3D modelování",
       "f2": "Pevnostní analýzy",
       "f3": "Návrh technologie výroby",
@@ -160,7 +160,7 @@
       },
       "s3": {
         "title": "Konstrukce a dokumentace",
-        "desc": "Zpracujeme detailní konstrukční řešení ve 3D se 100% zárukou vyrobitelnosti. Připravíme kompletní výkresovou dokumentaci a montážní sestavy."
+        "desc": "Zpracujeme detailní konstrukční řešení ve 3D se zárukou vyrobitelnosti. Připravíme kompletní výkresovou dokumentaci a montážní sestavy."
       },
       "s4": {
         "title": "Podpora výroby",
@@ -171,7 +171,7 @@
       "title": "Proč vyvíjet s námi?",
       "b1": "Komplexní servis od návrhu po výrobu",
       "b2": "Pevná cenová nabídka rozdělená na etapy",
-      "b3": "100% záruka vyrobitelnosti výrobku",
+      "b3": "záruka vyrobitelnosti výrobku",
       "b4": "Zkušenosti v oboru již od roku 1990",
       "b5": "Oceněný design (ŠKODA, Mikroelektronika)",
       "b6": "Špičkové softwarové zázemí (Pro Engineer, SolidWorks)",
@@ -239,10 +239,10 @@
       "p2": "Proto jsme v roce 2001 založili společnost EXACT Technology s.r.o.a uplynulé roky jsme přivedli k životu nespočet projektů z dopravy, medicíny, strojírenství i spotřebního zboží, vždy s cílem zajistit jedinečný tvar a konkurenceschopnost na trhu."
     },
     "stats": {
-      "s1": "Zkušenosti v designu od roku 1990",
-      "s2": "Založení EXACT Technology v r. 2001",
-      "s3": "100% záruka vyrobitelnosti",
-      "s4": "Projekty v 8+ různých odvětvích"
+      "s1": "let zkušeností v oboru designu a konstrukce",
+      "s2": "hotových projektů",
+      "s3": "odvětví, ve kterých působíme",
+      "s4": "cíl vyrobit funkční produkt"
     },
     "values": {
       "title": "Naše filozofie",
@@ -253,7 +253,7 @@
       },
       "v2": {
         "title": "Garantovaná vyrobitelnost",
-        "desc": "Naše konstrukční zkušenosti dávají 100% záruku vyrobitelnosti. Zaručujeme, že design bude plně funkční bez zbytečných vícenákladů."
+        "desc": "Navrhujeme produkty s ohledem na reálnou výrobu. Výsledkem je funkční design bez zbytečných výrobních nákladů."
       },
       "v3": {
         "title": "Péče o každý produkt",

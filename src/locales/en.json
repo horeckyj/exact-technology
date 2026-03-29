@@ -107,7 +107,7 @@
     },
     "s3": {
       "title": "Structural Solutions",
-      "desc": "We process detailed 3D models in Pro Engineer or SolidWorks. We guarantee 100% manufacturability and perform strength analyses of stressed nodes.",
+      "desc": "We process detailed 3D models in Pro Engineer or SolidWorks. We guarantee manufacturability and perform strength analyses of stressed nodes.",
       "f1": "3D Modeling",
       "f2": "Strength Analyses",
       "f3": "Production Tech Design",
@@ -160,7 +160,7 @@
       },
       "s3": {
         "title": "Construction & Documentation",
-        "desc": "We process detailed structural solutions in 3D with a 100% manufacturability guarantee. We prepare complete drawing documentation and assembly sets."
+        "desc": "We process detailed structural solutions in 3D with a manufacturability guarantee. We prepare complete drawing documentation and assembly sets."
       },
       "s4": {
         "title": "Production Support",
@@ -171,7 +171,7 @@
       "title": "Why develop with us?",
       "b1": "Comprehensive service from design to production",
       "b2": "Fixed price offer divided into stages",
-      "b3": "100% product manufacturability guarantee",
+      "b3": "Product manufacturability guarantee",
       "b4": "Experience in the field since 1990",
       "b5": "Award-winning design (ŠKODA, Mikroelektronika)",
       "b6": "Top-notch software background (Pro Engineer, SolidWorks)",
@@ -239,10 +239,10 @@
       "p2": "Therefore, in 2001, we founded EXACT Technology s.r.o. Over the years, we have brought to life countless projects from transport, medicine, engineering, and consumer goods, always with the goal of ensuring a unique shape and competitiveness on the market."
     },
     "stats": {
-      "s1": "Design experience since 1990",
-      "s2": "Founded EXACT Technology in 2001",
-      "s3": "100% manufacturability guarantee",
-      "s4": "Projects in 8+ different industries"
+      "s1": "years of experience in design and engineering",
+      "s2": "completed projects",
+      "s3": "industries we operate in",
+      "s4": "goal: deliver a functional product"
     },
     "values": {
       "title": "Our Philosophy",
@@ -253,7 +253,7 @@
       },
       "v2": {
         "title": "Guaranteed Manufacturability",
-        "desc": "Our structural experience gives a 100% manufacturability guarantee. We guarantee that the design will be fully functional without unnecessary extra costs."
+        "desc": "We design products with real-world manufacturing in mind. The result is a functional design without unnecessary production costs."
       },
       "v3": {
         "title": "Care for Every Product",

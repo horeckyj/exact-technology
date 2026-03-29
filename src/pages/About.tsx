@@ -8,10 +8,10 @@ const About: React.FC = () => {
   const { t } = useTranslation();
 
   const stats = [
-    { label: t('about.stats.s1'), value: '2015' },
+    { label: t('about.stats.s1'), value: '35+' },
     { label: t('about.stats.s2'), value: '120+' },
-    { label: t('about.stats.s3'), value: '5' },
-    { label: t('about.stats.s4'), value: '45' }
+    { label: t('about.stats.s3'), value: '8+' },
+    { label: t('about.stats.s4'), value: '1' }
   ];
 
   const values = [
@@ -90,9 +90,6 @@ const About: React.FC = () => {
               <p>
                 {t('about.story.p2')}
               </p>
-              <p>
-                {t('about.story.p3')}
-              </p>
             </div>
             
             <div className="grid grid-cols-2 gap-6 mt-12">
@@ -118,12 +115,12 @@ const About: React.FC = () => {
             className="grid grid-cols-2 gap-4 h-[600px]"
           >
             <div className="space-y-4 h-full">
-              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="3D Modeling" className="w-full h-3/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
-              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="Engineering" className="w-full h-2/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+              <img src="/image/ManufacturingSolution.jpg" alt="3D Modeling" className="w-full h-3/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+              <img src="/image/designdocumentation.png" alt="Engineering" className="w-full h-2/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
             </div>
             <div className="space-y-4 h-full pt-12">
-              <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0dd?auto=format&fit=crop&q=80&w=800" alt="Documentation" className="w-full h-2/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
-              <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0dd?auto=format&fit=crop&q=80&w=800" alt="Design" className="w-full h-3/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+              <img src="/image/TechnicalDrawing.jpg" alt="Documentation" className="w-full h-2/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+              <img src="/public/ExTech_Making_2.png" alt="Design" className="w-full h-3/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
             </div>
           </motion.div>
         </div>

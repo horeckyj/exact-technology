@@ -116,10 +116,7 @@ const Services: React.FC = () => {
               
               <div className="p-8 pt-16 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-brand-400 transition-colors">
-                  <Link to={`/sluzby/${service.id}`} className="focus:outline-none">
-                    <span className="absolute inset-0" aria-hidden="true" />
-                    {service.title}
-                  </Link>
+                  {service.title}
                 </h3>
                 <p className="text-slate-400 mb-8 flex-grow leading-relaxed font-light">
                   {service.description}
@@ -132,10 +129,6 @@ const Services: React.FC = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-auto pt-4 flex items-center text-brand-400 font-bold text-sm uppercase tracking-wider group/link">
-                  {t('services.more')}
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" />
-                </div>
               </div>
             </motion.div>
           ))}
