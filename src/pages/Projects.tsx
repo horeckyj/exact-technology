@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowRight, ExternalLink, Filter, Search } from 'lucide-react';
+import { ArrowRight, ExternalLink, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { projectsData } from '../data/projects';
 
 const Projects: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [filter, setFilter] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [visibleCount, setVisibleCount] = useState(4);
@@ -21,73 +22,34 @@ const Projects: React.FC = () => {
     { id: 'medicine', label: t('projects.categories.medicine') },
     { id: 'electronics', label: t('projects.categories.electronics') },
     { id: 'weapons_furniture', label: t('projects.categories.weapons_furniture') },
-    { id: 'demo', label: t('projects.categories.demo') }
+    { id: 'other', label: t('projects.categories.other') }
   ];
 
-  const projects = [
-    {
-      id: '3d-konfigurator',
-      title: t('projects.p5.title'),
-      client: t('projects.p5.client'),
-      categoryId: 'demo',
-      category: t('projects.categories.demo'),
-      description: t('projects.p5.desc'),
-      tags: ['3D Modeling', 'Web Integration', 'Interactive'],
-      image: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0dd?auto=format&fit=crop&q=80&w=800',
-      color: 'from-brand-500 to-indigo-400'
-    },
-    {
-      id: 'design-transport',
-      title: t('projects.p1.title'),
-      client: t('projects.p1.client'),
-      categoryId: 'transport',
-      category: t('projects.categories.transport'),
-      description: t('projects.p1.desc'),
-      tags: ['Design', 'Construction', 'Transport'],
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800',
-      color: 'from-brand-500 to-amber-400'
-    },
-    {
-      id: 'design-elektronika',
-      title: t('projects.p2.title'),
-      client: t('projects.p2.client'),
-      categoryId: 'electronics',
-      category: t('projects.categories.electronics'),
-      description: t('projects.p2.desc'),
-      tags: ['Industrial Design', 'Electronics', 'Manufacturability'],
-      image: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0dd?auto=format&fit=crop&q=80&w=800',
-      color: 'from-slate-600 to-slate-400'
-    },
-    {
-      id: 'lekarske-pristroje',
-      title: t('projects.p3.title'),
-      client: t('projects.p3.client'),
-      categoryId: 'medicine',
-      category: t('projects.categories.medicine'),
-      description: t('projects.p3.desc'),
-      tags: ['Medical Tech', 'Ergonomics', 'Innovation'],
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800',
-      color: 'from-brand-600 to-brand-400'
-    },
-    {
-      id: 'ergonomie-reverzni-inzenyrstvi',
-      title: t('projects.p4.title'),
-      client: t('projects.p4.client'),
-      categoryId: 'weapons_furniture',
-      category: t('projects.categories.weapons_furniture'),
-      description: t('projects.p4.desc'),
-      tags: ['Reverse Engineering', 'Freeform Surfaces', 'Ergonomics'],
-      image: 'https://images.unsplash.com/photo-1581092926214-ee37378e0ce1?auto=format&fit=crop&q=80&w=800',
-      color: 'from-amber-500 to-yellow-400'
+  const projects = projectsData;
+
+  const getLocalizedDescription = (project: (typeof projectsData)[number]) => {
+    if (i18n.language.startsWith('cs')) {
+      return `Návrh a konstrukční řešení projektu ${project.title} pro klienta ${project.client}.`;
     }
-  ];
+
+    return project.description;
+  };
+
+  const categoryLabelById: Record<string, string> = {
+    transport: t('projects.categories.transport'),
+    medicine: t('projects.categories.medicine'),
+    electronics: t('projects.categories.electronics'),
+    weapons_furniture: t('projects.categories.weapons_furniture'),
+    other: t('projects.categories.other')
+  };
 
   const filteredProjects = projects.filter(p => {
     const matchesCategory = filter === 'all' || p.categoryId === filter;
+    const localizedDescription = getLocalizedDescription(p);
     const matchesSearch = searchQuery === '' || 
       p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       p.client.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      p.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      localizedDescription.toLowerCase().includes(searchQuery.toLowerCase()) ||
       p.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
     
     return matchesCategory && matchesSearch;
@@ -166,7 +128,7 @@ const Projects: React.FC = () => {
             {visibleProjects.map((project, index) => (
               <motion.div
                 layout
-                key={project.title}
+                key={project.id}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
@@ -179,14 +141,13 @@ const Projects: React.FC = () => {
                   <div className="relative h-72 overflow-hidden">
                     <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-40 group-hover:opacity-20 transition-opacity duration-500 z-10 mix-blend-multiply`}></div>
                     <img 
-                      src={project.image} 
+                      src={project.images[0]} 
                       alt={project.title} 
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute top-6 left-6 z-20">
                       <span className="px-4 py-2 bg-slate-900/90 backdrop-blur-md text-white text-xs font-bold rounded-full shadow-sm uppercase tracking-wider border border-slate-800">
-                        {project.category}
+                        {categoryLabelById[project.categoryId]}
                       </span>
                     </div>
                   </div>
@@ -204,7 +165,7 @@ const Projects: React.FC = () => {
                       {project.title}
                     </h3>
                     <p className="text-slate-400 mb-8 leading-relaxed font-light text-lg">
-                      {project.description}
+                      {getLocalizedDescription(project)}
                     </p>
                     
                     <div className="flex flex-wrap gap-2 mb-8">

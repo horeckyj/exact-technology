@@ -3,6 +3,12 @@ import { motion } from 'motion/react';
 import { Search, Palette, Box, RotateCcw, FileText, Settings, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import marketResearch from '../../image/Support.jpg';
+import designGraphics from '../../image/DetailedGraphics.jpg';
+import constructionSolutions from '../../image/ManufacturingSolution.jpg';
+import reverseEngineering from '../../image/ReverseEngineering.png';
+import drawingDocumentation from '../../image/TechnicalDrawing.jpg';
+import productionSupport from '../../image/ManufacuringSolutions.png';
 
 const Services: React.FC = () => {
   const { t } = useTranslation();
@@ -14,7 +20,7 @@ const Services: React.FC = () => {
       title: t('services.s1.title'),
       description: t('services.s1.desc'),
       features: [t('services.s1.f1'), t('services.s1.f2'), t('services.s1.f3'), t('services.s1.f4')],
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800'
+        image: marketResearch
     },
     {
       id: 'design-grafika',
@@ -22,7 +28,7 @@ const Services: React.FC = () => {
       title: t('services.s2.title'),
       description: t('services.s2.desc'),
       features: [t('services.s2.f1'), t('services.s2.f2'), t('services.s2.f3'), t('services.s2.f4')],
-      image: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0dd?auto=format&fit=crop&q=80&w=800'
+        image: designGraphics
     },
     {
       id: 'konstrukcni-reseni',
@@ -30,7 +36,7 @@ const Services: React.FC = () => {
       title: t('services.s3.title'),
       description: t('services.s3.desc'),
       features: [t('services.s3.f1'), t('services.s3.f2'), t('services.s3.f3'), t('services.s3.f4')],
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800'
+        image: constructionSolutions
     },
     {
       id: 'reverzni-inzenyrstvi',
@@ -38,7 +44,7 @@ const Services: React.FC = () => {
       title: t('services.s4.title'),
       description: t('services.s4.desc'),
       features: [t('services.s4.f1'), t('services.s4.f2'), t('services.s4.f3'), t('services.s4.f4')],
-      image: 'https://images.unsplash.com/photo-1581092926214-ee37378e0ce1?auto=format&fit=crop&q=80&w=800'
+        image: reverseEngineering
     },
     {
       id: 'vykresova-dokumentace',
@@ -46,7 +52,7 @@ const Services: React.FC = () => {
       title: t('services.s5.title'),
       description: t('services.s5.desc'),
       features: [t('services.s5.f1'), t('services.s5.f2'), t('services.s5.f3'), t('services.s5.f4')],
-      image: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0dd?auto=format&fit=crop&q=80&w=800'
+        image: drawingDocumentation
     },
     {
       id: 'podpora-vyroby',
@@ -54,7 +60,7 @@ const Services: React.FC = () => {
       title: t('services.s6.title'),
       description: t('services.s6.desc'),
       features: [t('services.s6.f1'), t('services.s6.f2'), t('services.s6.f3'), t('services.s6.f4')],
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800'
+        image: productionSupport
     }
   ];
 

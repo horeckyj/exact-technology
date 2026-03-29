@@ -190,6 +190,7 @@
       "medicine": "Medicine",
       "electronics": "Electronics",
       "weapons_furniture": "Weapons & Furniture",
+      "other": "Other Projects",
       "demo": "3D Demo"
     },
     "p5": {
@@ -323,6 +324,13 @@
     "process": "Development Process",
     "challenges": "Technical Challenges",
     "interestedBtn": "I am interested in a similar project",
+    "dynamic": {
+      "process": "From concept sketches to final production-ready geometry and surfaces.",
+      "challenges": "Balancing aesthetics, technical constraints, and manufacturability.",
+      "r1": "Full visual and engineering concept delivered.",
+      "r2": "Prepared for production and implementation.",
+      "r3": "Validated with client requirements and quality goals."
+    },
     "gallery": "Project Gallery",
     "p1": {
       "fullDescription": "For ŠKODA Transportation, we implemented a comprehensive design and construction solution for new generations of transport vehicles. The project required combining a modern look with extreme demands for safety, aerodynamics, and durability in demanding operations.",
