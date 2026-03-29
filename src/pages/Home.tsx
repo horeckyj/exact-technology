@@ -154,21 +154,21 @@ const Home: React.FC = () => {
                 icon: <PaintBucket className="w-6 h-6 text-white" />,
                 title: t('home.features.f1.title'),
                 description: t('home.features.f1.desc'),
-                image: 'https://images.unsplash.com/photo-1633167606207-d840b5070fc2?auto=format&fit=crop&q=80&w=800',
+                image: '/public/ExTech_Making_3.png',
                 path: '/sluzby/design-grafika'
               },
               {
                 icon: <Cloud className="w-6 h-6 text-white" />,
                 title: t('home.features.f2.title'),
                 description: t('home.features.f2.desc'),
-                image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800',
+                image: '/public/ExTech_Making.png',
                 path: '/sluzby/konstrukcni-reseni'
               },
               {
                 icon: <Shield className="w-6 h-6 text-white" />,
                 title: t('home.features.f3.title'),
                 description: t('home.features.f3.desc'),
-                image: 'https://images.unsplash.com/photo-1620121692029-d088224efc74?auto=format&fit=crop&q=80&w=800',
+                image: '/public/ExTech_Production_Medica.png',
                 path: '/sluzby/podpora-vyroby'
               }
             ].map((feature, index) => (
@@ -196,42 +196,6 @@ const Home: React.FC = () => {
                     {t('home.features.more')} <ChevronRight className="w-4 h-4 ml-1" />
                   </Link>
                 </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section with Parallax-like Background */}
-      <section className="relative py-32 bg-slate-950 text-white overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=1920"
-            alt="AI Factory"
-            className="w-full h-full object-cover opacity-10 scale-105"
-            referrerPolicy="no-referrer"
-          />
-          <div className="absolute inset-0 bg-slate-950/80 mix-blend-multiply"></div>
-        </div>
-        
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
-            {[
-              { number: '50+', label: t('home.stats.s1') },
-              { number: '15+', label: t('home.stats.s2') },
-              { number: '99.9%', label: t('home.stats.s3') },
-              { number: '24/7', label: t('home.stats.s4') }
-            ].map((stat, index) => (
-              <motion.div 
-                key={index}
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ type: "spring", stiffness: 100, delay: index * 0.1 }}
-                className="p-6 rounded-3xl backdrop-blur-sm bg-white/5 border border-white/10"
-              >
-                <div className="text-5xl md:text-6xl font-extrabold mb-3 text-transparent bg-clip-text bg-gradient-to-b from-white to-brand-300">{stat.number}</div>
-                <div className="text-brand-300 font-medium tracking-wide uppercase text-sm">{stat.label}</div>
               </motion.div>
             ))}
           </div>
