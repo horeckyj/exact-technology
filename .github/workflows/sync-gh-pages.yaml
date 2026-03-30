@@ -3,7 +3,7 @@ name: Sync gh-pages with main
 on:
   push:
     branches:
-      - main
+      - test
 
 jobs:
   sync:
@@ -14,6 +14,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Push main to gh-pages
+      - name: Push test to gh-pages
         run: |
           git push origin HEAD:refs/heads/gh-pages --force
