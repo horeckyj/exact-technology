@@ -3,10 +3,11 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Code, Cloud, Shield, ChevronRight, PaintBucket } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import Guys from '../../public/ExTech_Making_2.png';
-import Drawing from '../../public/ExTech_Drawing.png';
+import Guys from '../../image/public/ExTech_Making_2.png';
+import Drawing from '../../image/public/ExTech_Drawing.png';
 import { partners } from "../data/partners";
 import { PartnersSection } from '../components/PartnersSection';
+import { resolveAssetUrl } from '../utils/assetPath';
 
 type PartnersSectionProps = {
   title: string;
@@ -154,21 +155,21 @@ const Home: React.FC = () => {
                 icon: <PaintBucket className="w-6 h-6 text-white" />,
                 title: t('home.features.f1.title'),
                 description: t('home.features.f1.desc'),
-                image: '/public/ExTech_Making_3.png',
+                image: resolveAssetUrl('/image/public/ExTech_Making_3.png'),
                 path: '/spoluprace'
               },
               {
                 icon: <Cloud className="w-6 h-6 text-white" />,
                 title: t('home.features.f2.title'),
                 description: t('home.features.f2.desc'),
-                image: '/public/ExTech_Making.png',
+                image: resolveAssetUrl('/image/public/ExTech_Making.png'),
                 path: '/spoluprace'
               },
               {
                 icon: <Shield className="w-6 h-6 text-white" />,
                 title: t('home.features.f3.title'),
                 description: t('home.features.f3.desc'),
-                image: '/public/ExTech_Production_Medica.png',
+                image: resolveAssetUrl('/image/public/ExTech_Production_Medica.png'),
                 path: '/spoluprace'
               }
             ].map((feature, index) => (

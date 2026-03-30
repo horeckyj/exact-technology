@@ -1,3 +1,5 @@
+import { resolveAssetUrl } from '../utils/assetPath';
+
 export interface Project {
   id: string;
   title: string;
@@ -9,7 +11,7 @@ export interface Project {
   color: string;
 }
 
-export const projectsData: Project[] = [
+const rawProjectsData: Project[] = [
   // ============ TRANSPORT ============
   {
     id: 'transport-skoda-tramvaje',
@@ -774,5 +776,10 @@ export const projectsData: Project[] = [
     color: 'from-purple-600 to-pink-500'
   }
 ];
+
+export const projectsData: Project[] = rawProjectsData.map((project) => ({
+  ...project,
+  images: project.images.map(resolveAssetUrl)
+}));
 
 export default projectsData;

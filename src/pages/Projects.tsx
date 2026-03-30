@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, ExternalLink, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -25,7 +25,17 @@ const Projects: React.FC = () => {
     { id: 'other', label: t('projects.categories.other') }
   ];
 
-  const projects = projectsData;
+  const projects = useMemo(() => {
+    const shuffled = [...projectsData];
+
+    // Shuffle once per page load so the first visible cards are not locked to one category.
+    for (let i = shuffled.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    return shuffled;
+  }, []);
 
   const getLocalizedDescription = (project: (typeof projectsData)[number]) => {
     if (i18n.language.startsWith('cs')) {

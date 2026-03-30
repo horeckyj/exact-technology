@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Users, Target, Award, Globe, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { resolveAssetUrl } from '../utils/assetPath';
 
 const About: React.FC = () => {
   const { t } = useTranslation();
@@ -115,12 +116,12 @@ const About: React.FC = () => {
             className="grid grid-cols-2 gap-4 h-[600px]"
           >
             <div className="space-y-4 h-full">
-              <img src="/image/ManufacturingSolution.jpg" alt="3D Modeling" className="w-full h-3/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
-              <img src="/image/designdocumentation.png" alt="Engineering" className="w-full h-2/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+              <img src={resolveAssetUrl('/image/ManufacturingSolution.jpg')} alt="3D Modeling" className="w-full h-3/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+              <img src={resolveAssetUrl('/image/designdocumentation.png')} alt="Engineering" className="w-full h-2/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
             </div>
             <div className="space-y-4 h-full pt-12">
-              <img src="/image/TechnicalDrawing.jpg" alt="Documentation" className="w-full h-2/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
-              <img src="/public/ExTech_Making_2.png" alt="Design" className="w-full h-3/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+              <img src={resolveAssetUrl('/image/TechnicalDrawing.jpg')} alt="Documentation" className="w-full h-2/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+              <img src={resolveAssetUrl('/image/public/ExTech_Making_2.png')} alt="Design" className="w-full h-3/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
             </div>
           </motion.div>
         </div>
