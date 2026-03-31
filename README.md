@@ -18,3 +18,9 @@ View your app in AI Studio: https://ai.studio/apps/9f68db51-4cd8-4fd7-8363-8642a
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Test site:
+https://horeckyj.github.io/exact-technology/
+
+# Prod Site
+https://www.exact-tech.cz/
