@@ -152,7 +152,7 @@ const Projects: React.FC = () => {
                     <img 
                       src={project.images[0]} 
                       alt={project.title} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                     />
                     <div className="absolute top-6 left-6 z-20">
                       <span className="px-4 py-2 bg-slate-900/90 backdrop-blur-md text-white text-xs font-bold rounded-full shadow-sm uppercase tracking-wider border border-slate-800">
