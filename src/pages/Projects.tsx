@@ -149,7 +149,6 @@ const Projects: React.FC = () => {
                   className="block group relative bg-slate-900 rounded-[2.5rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-800 hover:border-brand-500/30 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-500"
                 >
                   <div className="relative h-72 overflow-hidden">
-                    <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-40 group-hover:opacity-20 transition-opacity duration-500 z-10 mix-blend-multiply`}></div>
                     <img 
                       src={project.images[0]} 
                       alt={project.title} 
@@ -164,7 +163,7 @@ const Projects: React.FC = () => {
                   
                   <div className="p-10 relative">
                     <div className="absolute -top-10 right-10 w-20 h-20 bg-slate-900 rounded-2xl shadow-xl flex items-center justify-center z-30 transform group-hover:-translate-y-2 transition-transform duration-300 border border-slate-800">
-                      <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${project.color} opacity-20 absolute`}></div>
+                      
                       <ExternalLink className="w-8 h-8 text-white relative z-10" />
                     </div>
 
