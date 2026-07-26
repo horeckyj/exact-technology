@@ -3,15 +3,16 @@ import { motion } from 'motion/react';
 import { Search, Palette, Box, RotateCcw, FileText, Settings, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import marketResearch from '../../image/Support.jpg';
-import designGraphics from '../../image/DetailedGraphics.jpg';
-import constructionSolutions from '../../image/ManufacturingSolution.jpg';
-import reverseEngineering from '../../image/ReverseEngineering.png';
-import drawingDocumentation from '../../image/TechnicalDrawing.jpg';
-import productionSupport from '../../image/ManufacuringSolutions.png';
+import { resolveAssetUrl } from '../utils/assetPath';
 
 const Services: React.FC = () => {
   const { t } = useTranslation();
+  const marketResearch = resolveAssetUrl('/image/Support.jpg');
+  const designGraphics = resolveAssetUrl('/image/DetailedGraphics.jpg');
+  const constructionSolutions = resolveAssetUrl('/image/ManufacturingSolution.jpg');
+  const reverseEngineering = resolveAssetUrl('/image/ReverseEngineering.png');
+  const drawingDocumentation = resolveAssetUrl('/image/TechnicalDrawing.jpg');
+  const productionSupport = resolveAssetUrl('/image/ManufacuringSolutions.png');
 
   const services = [
     {

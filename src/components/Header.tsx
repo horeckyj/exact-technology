@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Logo from '../../image/public/logo_no_bg.png';
+import { resolveAssetUrl } from '../utils/assetPath';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,6 +20,8 @@ const Header: React.FC = () => {
     i18n.changeLanguage(lng);
   };
 
+  const logo = resolveAssetUrl('/image/public/logo_no_bg.png');
+
   return (
     <header className="bg-slate-950/80 backdrop-blur-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,7 +29,7 @@ const Header: React.FC = () => {
           {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="flex items-center gap-2">
-                <img src={Logo} alt="EXACT Logo" className="h-auto w-auto" />
+                <img src={logo} alt="EXACT Logo" className="h-auto w-auto" />
               </Link>
             </div>
 

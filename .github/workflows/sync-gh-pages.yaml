@@ -1,4 +1,4 @@
-name: Deploy test branch to GitHub Pages
+name: Deploy main to FTP and test to GitHub Pages
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -6,6 +6,7 @@ env:
 on:
   push:
     branches:
+      - main
       - test
   workflow_dispatch:
 
@@ -13,11 +14,42 @@ permissions:
   contents: write
 
 concurrency:
-  group: gh-pages-deploy
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  deploy_ftp:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build site
+        run: npm run build
+
+      - name: Upload site to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          dangerous-clean-slate: true
+
+  deploy_gh_pages:
+    if: github.ref == 'refs/heads/test'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

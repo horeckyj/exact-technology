@@ -3,8 +3,6 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Code, Cloud, Shield, ChevronRight, PaintBucket } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import Guys from '../../image/public/ExTech_Making_2.png';
-import Drawing from '../../image/public/ExTech_Drawing.png';
 import { partners } from "../data/partners";
 import { PartnersSection } from '../components/PartnersSection';
 import { resolveAssetUrl } from '../utils/assetPath';
@@ -15,6 +13,8 @@ type PartnersSectionProps = {
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
+  const guysImage = resolveAssetUrl('/image/public/ExTech_Making_2.png');
+  const drawingImage = resolveAssetUrl('/image/public/ExTech_Drawing.png');
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -112,7 +112,7 @@ const Home: React.FC = () => {
               <motion.img
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                src= {Guys}
+                src={guysImage}
                 alt="AI CAD Design"
                 className="absolute top-10 right-0 w-4/5 rounded-2xl shadow-2xl border border-white/10 z-20"
                 referrerPolicy="no-referrer"
@@ -120,7 +120,7 @@ const Home: React.FC = () => {
               <motion.img
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                src= {Drawing}
+                src={drawingImage}
                 alt="AI Manufacturing"
                 className="absolute bottom-10 left-0 w-3/5 rounded-2xl shadow-2xl border border-white/10 z-30"
                 referrerPolicy="no-referrer"
