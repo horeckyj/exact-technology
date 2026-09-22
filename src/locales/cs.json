@@ -318,6 +318,8 @@
   },
   "projectDetail": {
     "backToProjects": "Zpět na projekty",
+    "moreInfo": "Více informací o projektu",
+    "openImage": "Otevřít obrázek",
     "aboutProject": "O projektu",
     "technologies": "Použité technologie",
     "keyResults": "Klíčové výsledky",

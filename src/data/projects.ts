@@ -437,7 +437,7 @@ const rawProjectsData: Project[] = [
       '/image/gallery/1250243789_image_cic-002.jpg',
       '/image/gallery/1250243806_image_cic-003.jpg',
       '/image/gallery/1250243938_image_cic-004.jpg',
-      '/image/gallery/1250244053_image_cic-005.jpg',
+      '/image/gallery/1250244053_image_cic-007.jpg',
       '/image/gallery/1250244479_image_cic-005.jpg',
       '/image/gallery/1250244510_image_cic-006.jpg'
     ],
@@ -779,7 +779,7 @@ const rawProjectsData: Project[] = [
 
 export const projectsData: Project[] = rawProjectsData.map((project) => ({
   ...project,
-  images: project.images.map(resolveAssetUrl)
+  images: project.images.map((image) => resolveAssetUrl(image.replace('_image_', '_original_')))
 }));
 
 export default projectsData;

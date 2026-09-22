@@ -318,6 +318,8 @@
   },
   "projectDetail": {
     "backToProjects": "Back to projects",
+    "moreInfo": "More information about the project",
+    "openImage": "Open image",
     "aboutProject": "About the project",
     "technologies": "Technologies used",
     "keyResults": "Key results",
