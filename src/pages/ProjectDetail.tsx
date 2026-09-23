@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowLeft, CheckCircle2, ChevronDown, ExternalLink, X, ZoomIn } from 'lucide-react';
+import { CheckCircle2, ChevronDown, ExternalLink, Undo2, X, ZoomIn } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { projectsData } from '../data/projects';
 
@@ -43,7 +43,7 @@ const ProjectDetail: React.FC = () => {
       openedByHoverRef.current = true;
       setSelectedImage(image);
       hoverTimerRef.current = null;
-    }, 500);
+    }, 300);
   };
 
   const closeHoverPreviewOnMove = () => {
@@ -86,7 +86,7 @@ const ProjectDetail: React.FC = () => {
               aria-label={t('projectDetail.backToProjects')}
               title={t('projectDetail.backToProjects')}
             >
-              <ArrowLeft className="h-5 w-5" />
+              <Undo2 className="h-5 w-5" />
             </Link>
               <h1 className="min-w-0 text-2xl font-extrabold text-white sm:text-3xl md:text-4xl">
                 {project.title}
@@ -217,6 +217,7 @@ const ProjectDetail: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
             className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/90 backdrop-blur-sm p-4"
             onMouseMove={closeHoverPreviewOnMove}
             onClick={() => {
@@ -239,6 +240,7 @@ const ProjectDetail: React.FC = () => {
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.9 }}
+              transition={{ duration: 0.3 }}
               src={selectedImage}
               alt="Full screen gallery image"
               className="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl"
