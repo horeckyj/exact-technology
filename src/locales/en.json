@@ -1,4 +1,8 @@
 {
+  "common": {
+    "readMore": "Read more",
+    "showLess": "Show less"
+  },
   "header": {
     "nav": {
       "home": "Home",

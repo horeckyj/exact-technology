@@ -1,4 +1,8 @@
 {
+  "common": {
+    "readMore": "Zobrazit více",
+    "showLess": "Zobrazit méně"
+  },
   "header": {
     "nav": {
       "home": "Úvod",
