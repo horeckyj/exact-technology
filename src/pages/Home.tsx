@@ -72,16 +72,11 @@ const Home: React.FC = () => {
               animate="visible"
               className="max-w-3xl"
             >
-              <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20 mb-8 backdrop-blur-md">
-                <span className="flex h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>
-                <span className="text-sm font-medium tracking-wide">{t('home.hero.tagline')}</span>
-              </motion.div>
-              
               <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1] text-white">
                 {t('home.hero.title1')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-amber-300">{t('home.hero.title2')}</span> {t('home.hero.title3')}
               </motion.h1>
               
-              <motion.p variants={itemVariants} className="text-lg md:text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl font-light">
+              <motion.p variants={itemVariants} className="hidden sm:block text-lg md:text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl font-light">
                 {t('home.hero.description')}
               </motion.p>
               
@@ -191,7 +186,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-white mb-3">{feature.title}</h3>
-                  <p className="text-slate-400 leading-relaxed font-light mb-6">{feature.description}</p>
+                  <p className="text-slate-400 leading-relaxed font-light mb-6 line-clamp-3 sm:line-clamp-none">{feature.description}</p>
                   <Link to={feature.path} className="inline-flex items-center text-brand-400 font-semibold hover:text-brand-300 transition-colors focus:outline-none">
                     <span className="absolute inset-0" aria-hidden="true" />
                     {t('home.features.more')} <ChevronRight className="w-4 h-4 ml-1" />

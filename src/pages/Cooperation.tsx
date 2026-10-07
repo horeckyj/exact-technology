@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { CheckCircle2, ArrowRight, Search, Palette, Box, Settings } from 'lucide-react';
+import { CheckCircle2, ArrowRight, Search, Palette, Box, Settings, ChevronDown, ChevronUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Cooperation: React.FC = () => {
   const { t } = useTranslation();
+  const [expandedStep, setExpandedStep] = useState<number | null>(null);
 
   const steps = [
     {
@@ -66,7 +67,7 @@ const Cooperation: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl md:text-2xl text-slate-400 font-light leading-relaxed"
+            className="hidden sm:block text-xl md:text-2xl text-slate-400 font-light leading-relaxed"
           >
             {t('cooperation.description')}
           </motion.p>
@@ -98,7 +99,18 @@ const Cooperation: React.FC = () => {
                   </div>
                   <div className="pt-2">
                     <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-brand-400 transition-colors">{step.title}</h3>
-                    <p className="text-slate-400 leading-relaxed text-lg font-light">{step.description}</p>
+                    <p className={`text-slate-400 leading-relaxed text-lg font-light ${expandedStep === index ? '' : 'line-clamp-2 sm:line-clamp-none'}`}>
+                      {step.description}
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => setExpandedStep(expandedStep === index ? null : index)}
+                      className="sm:hidden inline-flex items-center gap-1 text-brand-400 font-semibold mt-3"
+                      aria-expanded={expandedStep === index}
+                    >
+                      {expandedStep === index ? t('common.readLess', { defaultValue: 'Zobrazit méně' }) : t('common.readMore', { defaultValue: 'Zobrazit více' })}
+                      {expandedStep === index ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+                    </button>
                   </div>
                 </motion.div>
               ))}

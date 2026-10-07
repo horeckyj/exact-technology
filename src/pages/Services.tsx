@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Search, Palette, Box, RotateCcw, FileText, Settings, ArrowRight } from 'lucide-react';
+import { Search, Palette, Box, RotateCcw, FileText, Settings, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { resolveAssetUrl } from '../utils/assetPath';
 
 const Services: React.FC = () => {
   const { t } = useTranslation();
+  const [expandedService, setExpandedService] = useState<string | null>(null);
   const marketResearch = resolveAssetUrl('/image/Support.jpg');
   const designGraphics = resolveAssetUrl('/image/DetailedGraphics.jpg');
   const constructionSolutions = resolveAssetUrl('/image/ManufacturingSolution.jpg');
@@ -88,7 +89,7 @@ const Services: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl md:text-2xl text-slate-400 font-light leading-relaxed"
+            className="hidden sm:block text-xl md:text-2xl text-slate-400 font-light leading-relaxed"
           >
             {t('services.description')}
           </motion.p>
@@ -97,7 +98,7 @@ const Services: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <motion.div
-              key={index}
+              key={service.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
@@ -119,9 +120,18 @@ const Services: React.FC = () => {
                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-brand-400 transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-slate-400 mb-8 flex-grow leading-relaxed font-light">
+                <p className={`text-slate-400 mb-3 sm:mb-8 flex-grow leading-relaxed font-light ${expandedService === service.id ? '' : 'line-clamp-2 sm:line-clamp-none'}`}>
                   {service.description}
                 </p>
+                <button
+                  type="button"
+                  onClick={() => setExpandedService(expandedService === service.id ? null : service.id)}
+                  className="sm:hidden inline-flex items-center gap-1 self-start text-brand-400 font-semibold mb-6"
+                  aria-expanded={expandedService === service.id}
+                >
+                  {expandedService === service.id ? t('common.readLess', { defaultValue: 'Zobrazit méně' }) : t('common.readMore', { defaultValue: 'Zobrazit více' })}
+                  {expandedService === service.id ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+                </button>
                 <ul className="space-y-3 border-t border-slate-800 pt-6 mb-6">
                   {service.features.map((feature, fIndex) => (
                     <li key={fIndex} className="flex items-center text-slate-300 font-medium text-sm">

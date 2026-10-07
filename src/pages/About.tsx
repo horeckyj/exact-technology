@@ -67,7 +67,7 @@ const About: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed"
+            className="hidden sm:block text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed"
           >
             {t('about.description')}
           </motion.p>
@@ -98,10 +98,10 @@ const About: React.FC = () => {
                 <motion.div 
                   key={index} 
                   whileHover={{ scale: 1.05 }}
-                  className="bg-slate-900 p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-800 text-center"
+                  className="bg-slate-900 min-h-36 p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-800 text-center flex flex-col items-center justify-center"
                 >
-                  <div className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-brand-400 to-amber-300 mb-2">{stat.value}</div>
-                  <div className="text-slate-500 font-medium text-sm uppercase tracking-wider">{stat.label}</div>
+                  <div className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-brand-400 to-amber-300 mb-2">{stat.value}</div>
+                  <div className="text-slate-500 font-medium text-xs sm:text-sm uppercase tracking-wider leading-tight">{stat.label}</div>
                 </motion.div>
               ))}
             </div>

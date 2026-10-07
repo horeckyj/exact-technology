@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl md:text-2xl text-slate-400 font-light leading-relaxed"
+            className="hidden sm:block text-xl md:text-2xl text-slate-400 font-light leading-relaxed"
           >
             {t('contact.description')}
           </motion.p>
@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
                   <span dangerouslySetInnerHTML={{ __html: t('contact.info.address.val') }} />
                 </p>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Kovriginova+1684/1,+147+00+Prague+4"
+                  href="https://www.google.com/maps/search/?api=1&query=Ocelkova+643%2F20%2C+198+00+Praha+9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-brand-400 hover:text-brand-300 text-sm font-bold mt-4 transition-colors"
@@ -100,7 +100,7 @@ const Contact: React.FC = () => {
         >
           <div className="bg-slate-900 rounded-[3rem] p-4 border border-slate-800 shadow-2xl overflow-hidden h-[450px] relative group">
             <iframe 
-              src="https://maps.google.com/maps?q=Kovriginova%201684/1,%20147%2000%20Praha%204&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              src="https://maps.google.com/maps?q=Ocelkova%20643%2F20%2C%20198%2000%20Praha%209&t=&z=15&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="100%" 
               allowFullScreen={true} 

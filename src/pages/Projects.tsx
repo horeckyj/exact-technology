@@ -89,7 +89,7 @@ const Projects: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl md:text-2xl text-slate-400 font-light leading-relaxed"
+            className="hidden sm:block text-xl md:text-2xl text-slate-400 font-light leading-relaxed"
           >
             {t('projects.description')}
           </motion.p>
@@ -173,7 +173,7 @@ const Projects: React.FC = () => {
                     <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-brand-400 transition-colors">
                       {project.title}
                     </h3>
-                    <p className="text-slate-400 mb-8 leading-relaxed font-light text-lg">
+                    <p className="text-slate-400 mb-8 leading-relaxed font-light text-lg line-clamp-3 sm:line-clamp-none">
                       {getLocalizedDescription(project)}
                     </p>
                     

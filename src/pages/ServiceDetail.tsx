@@ -8,21 +8,29 @@ const ServiceDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const { t } = useTranslation();
 
-  // In a real app, you would fetch the service data based on the ID
+  const serviceNumberById: Record<string, string> = {
+    'pruzkum-trhu': '1',
+    'design-grafika': '2',
+    'konstrukcni-reseni': '3',
+    'reverzni-inzenyrstvi': '4',
+    'vykresova-dokumentace': '5',
+    'podpora-vyroby': '6'
+  };
+  const serviceNumber = serviceNumberById[id ?? ''] ?? '1';
+  const serviceKey = `services.s${serviceNumber}`;
+
   const service = {
-    id: 'vyvoj-webovych-aplikaci',
-    title: t('services.s1.title'),
+    id: id ?? 'pruzkum-trhu',
+    title: t(`${serviceKey}.title`),
     icon: <MonitorSmartphone className="w-12 h-12 text-brand-500" />,
-    description: t('services.s1.desc'),
+    description: t(`${serviceKey}.desc`),
     fullDescription: t('serviceDetail.fullDescription'),
     image: 'https://picsum.photos/seed/web-dev/1200/600?blur=1',
     features: [
-      t('serviceDetail.features.f1'),
-      t('serviceDetail.features.f2'),
-      t('serviceDetail.features.f3'),
-      t('serviceDetail.features.f4'),
-      t('serviceDetail.features.f5'),
-      t('serviceDetail.features.f6')
+      t(`${serviceKey}.f1`),
+      t(`${serviceKey}.f2`),
+      t(`${serviceKey}.f3`),
+      t(`${serviceKey}.f4`)
     ],
     technologies: ['React', 'Vue.js', 'Node.js', 'TypeScript', 'Next.js', 'Tailwind CSS']
   };
@@ -55,7 +63,7 @@ const ServiceDetail: React.FC = () => {
             <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
               {service.title}
             </h1>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto font-light">
+            <p className="hidden sm:block text-xl text-slate-400 max-w-2xl mx-auto font-light">
               {service.description}
             </p>
           </motion.div>
