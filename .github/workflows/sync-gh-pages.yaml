@@ -68,6 +68,8 @@ jobs:
 
       - name: Build site
         run: npm run build
+        env:
+          BASE_URL: /exact-technology/
 
       - name: Deploy dist to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
