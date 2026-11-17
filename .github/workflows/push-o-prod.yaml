@@ -34,12 +34,26 @@ jobs:
       - name: Check .htaccess is in the build
         run: test -f dist/.htaccess
 
+      # Fail with a clear message instead of a cryptic "usage: ssh ..." when a secret is missing.
+      - name: Check deploy secrets
+        env:
+          HOST: ${{ secrets.FTP_SERVER }}
+          USER: ${{ secrets.FTP_USERNAME }}
+          PASS: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          missing=0
+          [ -n "$HOST" ] || { echo "::error::Secret FTP_SERVER is empty or missing"; missing=1; }
+          [ -n "$USER" ] || { echo "::error::Secret FTP_USERNAME is empty or missing"; missing=1; }
+          [ -n "$PASS" ] || { echo "::error::Secret FTP_PASSWORD is empty or missing"; missing=1; }
+          case "$HOST" in *://*) echo "::error::FTP_SERVER must be a bare hostname (no ftp:// or sftp://)"; missing=1;; esac
+          exit $missing
+
       # Uploads the contents of dist/. The "*" glob skips dotfiles, so .htaccess goes in the next step.
       - name: SFTP Deploy (site)
         uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_NAME }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           local_path: './dist/*'
@@ -49,8 +63,8 @@ jobs:
       - name: SFTP Deploy (.htaccess)
         uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_NAME }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           local_path: './dist/.htaccess'
