@@ -2,7 +2,6 @@ import { resolveAssetUrl } from '../utils/assetPath';
 
 export type Partner = {
   name: string;
-  href?: string;
   logo: string;
 };
 
@@ -57,35 +56,35 @@ const referenceLogoFiles = [
   '1253881896_reference_zelezny.jpg'
 ] as const;
 
-const partnerMetaBySlug: Record<string, { name: string; href?: string }> = {
-  abb: { name: 'ABB', href: 'https://new.abb.com/cz' },
+const partnerMetaBySlug: Record<string, { name: string }> = {
+  abb: { name: 'ABB' },
   alimex: { name: 'Alimex' },
   amv: { name: 'AMV Technics' },
   anet: { name: 'Anet' },
   ateh: { name: 'ATEH' },
   bio: { name: 'BIOtherapy' },
-  botas: { name: 'Botas', href: 'https://www.botas.cz/' },
+  botas: { name: 'Botas' },
   btl: { name: 'BTL' },
   cic: { name: 'CIC' },
-  czub: { name: 'Ceska zbrojovka', href: 'https://www.czub.cz/' },
+  czub: { name: 'Ceska zbrojovka' },
   dzd: { name: 'Drazice' },
   ibc: { name: 'I.B.C.' },
   inekon: { name: 'INEKON' },
-  jablotron: { name: 'JABLOTRON', href: 'https://www.jablotron.com/cs/' },
+  jablotron: { name: 'JABLOTRON' },
   knoll: { name: 'KNOLL' },
   konektel: { name: 'Konektel' },
   kora: { name: 'KORA' },
-  linet: { name: 'LINET', href: 'https://www.linet.com/cs' },
+  linet: { name: 'LINET' },
   mikroelektronika: { name: 'Mikroelektronika' },
   patron: { name: 'PATRON' },
   proma: { name: 'PROMA REHA' },
-  ravak: { name: 'RAVAK', href: 'https://www.ravak.cz/' },
+  ravak: { name: 'RAVAK' },
   resi: { name: 'RESI' },
   'singig-rock': { name: 'Singing Rock' },
-  skoda: { name: 'SKODA', href: 'https://www.skoda-auto.cz/' },
-  sor: { name: 'SOR', href: 'https://www.sor.cz/' },
+  skoda: { name: 'SKODA' },
+  sor: { name: 'SOR' },
   tau: { name: 'TAU' },
-  tedom: { name: 'TEDOM', href: 'https://www.tedom.com/' },
+  tedom: { name: 'TEDOM' },
   zelezny: { name: 'Zelezny' }
 };
 
@@ -106,7 +105,6 @@ export const partners: Partner[] = referenceLogoFiles
 
     return {
       name: meta?.name ?? toFallbackName(slug),
-      href: meta?.href,
       logo: resolveAssetUrl(`/image/reference/${fileName}`)
     };
   })
