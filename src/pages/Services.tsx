@@ -93,13 +93,6 @@ const Services: React.FC = () => {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  to={`/sluzby/${service.id}`}
-                  className="group/link inline-flex items-center gap-2 self-start text-brand-400 hover:text-brand-300 font-semibold transition-colors"
-                >
-                  {t('services.detailLink')}
-                  <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                </Link>
               </div>
             </motion.div>
           ))}
