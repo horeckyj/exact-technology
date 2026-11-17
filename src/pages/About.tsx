@@ -145,15 +145,15 @@ const About: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="grid grid-cols-2 gap-4 h-[600px]"
+            className="grid grid-cols-2 gap-3 sm:gap-4 h-[420px] sm:h-[600px]"
           >
-            <div className="space-y-4 h-full">
-              <img src={resolveAssetUrl('/image/ManufacturingSolution.jpg')} alt="3D Modeling" className="w-full h-3/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
-              <img src={resolveAssetUrl('/image/designdocumentation.png')} alt="Engineering" className="w-full h-2/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+            <div className="flex flex-col gap-3 sm:gap-4 h-full min-h-0">
+              <img src={resolveAssetUrl('/image/ManufacturingSolution.jpg')} alt="3D Modeling" className="w-full flex-[3] min-h-0 object-cover rounded-2xl sm:rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+              <img src={resolveAssetUrl('/image/designdocumentation.png')} alt="Engineering" className="w-full flex-[2] min-h-0 object-cover rounded-2xl sm:rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
             </div>
-            <div className="space-y-4 h-full pt-12">
-              <img src={resolveAssetUrl('/image/TechnicalDrawing.jpg')} alt="Documentation" className="w-full h-2/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
-              <img src={resolveAssetUrl('/image/public/ExTech_Making_2.png')} alt="Design" className="w-full h-3/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+            <div className="flex flex-col gap-3 sm:gap-4 h-full min-h-0 pt-8 sm:pt-12">
+              <img src={resolveAssetUrl('/image/TechnicalDrawing.jpg')} alt="Documentation" className="w-full flex-[2] min-h-0 object-cover rounded-2xl sm:rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+              <img src={resolveAssetUrl('/image/public/ExTech_Making_2.png')} alt="Design" className="w-full flex-[3] min-h-0 object-cover rounded-2xl sm:rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
             </div>
           </motion.div>
         </div>
