@@ -20,6 +20,25 @@
   --color-brand-950: #3d1407;
 }
 
+/* Animated lemniscate (infinity) used in the About page stats */
+.lemniscate-path {
+  stroke-dasharray: 20 12;
+  animation: lemniscate-dash 2.5s linear infinite;
+}
+
+.lemniscate-dot {
+  filter: drop-shadow(0 0 4px rgba(255, 138, 32, 0.9));
+}
+
+@keyframes lemniscate-dash {
+  to { stroke-dashoffset: -64; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lemniscate-path { animation: none; stroke-dasharray: none; }
+  .lemniscate-dot { display: none; }
+}
+
 html {
   scroll-behavior: smooth;
   background-color: #020617;
