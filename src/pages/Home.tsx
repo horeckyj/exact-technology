@@ -3,8 +3,6 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Code, Cloud, Shield, ChevronRight, PaintBucket } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import Guys from '../../image/public/ExTech_Making_2.png';
-import Drawing from '../../image/public/ExTech_Drawing.png';
 import { partners } from "../data/partners";
 import { PartnersSection } from '../components/PartnersSection';
 import { resolveAssetUrl } from '../utils/assetPath';
@@ -15,6 +13,8 @@ type PartnersSectionProps = {
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
+  const guysImage = resolveAssetUrl('/image/public/ExTech_Making_2.png');
+  const drawingImage = resolveAssetUrl('/image/public/ExTech_Drawing.png');
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -56,10 +56,10 @@ const Home: React.FC = () => {
             className="absolute top-0 right-0 w-full h-full opacity-10"
           >
             <img
-              src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1920"
-              alt="Background"
+              src={resolveAssetUrl('/image/TechnicalDrawing.jpg')}
+              alt=""
+              aria-hidden="true"
               className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
             />
           </motion.div>
         </div>
@@ -72,16 +72,11 @@ const Home: React.FC = () => {
               animate="visible"
               className="max-w-3xl"
             >
-              <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20 mb-8 backdrop-blur-md">
-                <span className="flex h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>
-                <span className="text-sm font-medium tracking-wide">{t('home.hero.tagline')}</span>
-              </motion.div>
-              
               <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1] text-white">
                 {t('home.hero.title1')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-amber-300">{t('home.hero.title2')}</span> {t('home.hero.title3')}
               </motion.h1>
               
-              <motion.p variants={itemVariants} className="text-lg md:text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl font-light">
+              <motion.p variants={itemVariants} className="hidden sm:block text-lg md:text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl font-light">
                 {t('home.hero.description')}
               </motion.p>
               
@@ -112,7 +107,7 @@ const Home: React.FC = () => {
               <motion.img
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                src= {Guys}
+                src={guysImage}
                 alt="AI CAD Design"
                 className="absolute top-10 right-0 w-4/5 rounded-2xl shadow-2xl border border-white/10 z-20"
                 referrerPolicy="no-referrer"
@@ -120,7 +115,7 @@ const Home: React.FC = () => {
               <motion.img
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                src= {Drawing}
+                src={drawingImage}
                 alt="AI Manufacturing"
                 className="absolute bottom-10 left-0 w-3/5 rounded-2xl shadow-2xl border border-white/10 z-30"
                 referrerPolicy="no-referrer"
@@ -191,7 +186,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-white mb-3">{feature.title}</h3>
-                  <p className="text-slate-400 leading-relaxed font-light mb-6">{feature.description}</p>
+                  <p className="text-slate-400 leading-relaxed font-light mb-6 line-clamp-3 sm:line-clamp-none">{feature.description}</p>
                   <Link to={feature.path} className="inline-flex items-center text-brand-400 font-semibold hover:text-brand-300 transition-colors focus:outline-none">
                     <span className="absolute inset-0" aria-hidden="true" />
                     {t('home.features.more')} <ChevronRight className="w-4 h-4 ml-1" />

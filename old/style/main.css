@@ -1,0 +1,203 @@
+/* Hlavni prvky stranky */
+body {
+  color: #969494;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /*background-color: #737070;*/
+  /*background-color: #1F1A17;*/
+  background-color: #000000;
+}
+
+.wrapper {
+  width: 1200px;
+  height: 605px;
+  position: relative;
+  margin: auto;
+}
+
+.document {
+  width: 1200px;
+  margin: 0;
+  position: relative;
+  text-align: left;
+  /*background-color: #1F1A17;*/
+  background-color: #000000;
+}
+
+.content {
+  height: 605px;
+  background: transparent url('../image/background_content.gif') right top no-repeat;
+}
+
+.homepage_wrapper {
+  float: left;
+  max-width: 600px;
+  _width: 600px;
+  height: 600px;
+  margin-right: 200px;
+  background: transparent url('../image/background_homepage.gif') left top repeat;
+}
+
+.homepage_wrapper img {
+  max-width: 600px;
+  _width: 600px;
+}
+
+.text_wrapper {
+  float: left;
+  width: 810px;
+  height: 525px;
+  margin: 60px 20px 15px 90px;
+  _margin: 60px 10px 15px 45px;
+  font-size: 12px;
+}
+
+.tram_icon {
+  margin-right: -100px;
+  background: transparent url('../image/tram_icon.jpg') 85% 97% no-repeat;
+}
+
+.text {
+  width: 500px;
+  height: 525px;
+  overflow: auto;
+}
+
+.gallery_wrapper {
+  float: left;
+  width: 750px;
+  height: 600px;
+  background: transparent url('../image/background_content.gif') -90px 0 no-repeat;
+}
+
+.header {
+  float: right;
+  width: 400px;
+  height: 60px;
+  margin-top: 40px;
+}
+
+.header .logo {
+  float: right;
+  width: 210px;
+  height: 60px;
+  margin: 0 184px 0 0;
+  _margin: 0 92px 0 0;
+}
+
+.header .logo img {
+  width: 210px;
+  height: 51px;
+  border: none;
+}
+
+.menu {
+	float: right;
+  width: 200px;
+  height: 465px;
+  margin-top: 40px;
+	font: bold 22px Arial Narrow, serif;
+	background: transparent url('../image/background_menu.gif') right bottom no-repeat;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+
+.menu ul h3 {
+  color: #969494;
+  cursor: pointer;
+  margin: 0;
+  padding: 0 0 0 20px;
+  font: bold 22px Arial Narrow, serif;
+/*  background: transparent url('../image/menu_li.gif') left center no-repeat;*/
+}
+
+.menu li {
+	margin: 0;
+  padding: 10px 0 0 0;
+  list-style: none;
+}
+
+.menu li a, .menu li a:link, .menu li a:visited {
+	color: #969494;
+	padding-left: 20px;
+	text-decoration: none;
+/*	background: transparent url('../image/menu_li.gif') left center no-repeat; */
+}
+
+.menu li a:hover, .menu ul h3:hover {
+	color: #E87817;
+	font-weight: bold;
+/*	background: transparent url('../image/menu_li_hover.gif') left center no-repeat; */
+}
+
+.menu li ul {
+  width: 200px;
+  display: none;
+  position: absolute;
+  top: -35px;
+  left: -200px;
+  text-align: right;
+}
+
+.menu li ul li {
+  padding: 10px 0 0 0;
+}
+
+.menu li ul li a, .menu li ul li a:link, .menu li ul li a:visited {
+	padding-left: 0;
+}
+
+.footer {
+	color: #363636;
+	float: left;
+  width: 1200px;
+  font-size: 0.8em;
+  /*background: #737070;*/
+}
+
+.footer a, .footer a:link, .footer a:visited {
+  color: #565656;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.language {
+  float: right;
+  width: 295px;
+  margin-top: -45px;
+}
+
+.language img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  padding: 0;
+  border: none;
+}
+
+.language a, .language a:link, .language a:visited {
+  color: #969494;
+  padding: 0 10px 0 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.language a:hover {
+  color: #E87817;
+}
+
+.cleaner {
+  clear: both;
+}

@@ -89,7 +89,7 @@ const Projects: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl md:text-2xl text-slate-400 font-light leading-relaxed"
+            className="hidden sm:block text-xl md:text-2xl text-slate-400 font-light leading-relaxed"
           >
             {t('projects.description')}
           </motion.p>
@@ -149,11 +149,10 @@ const Projects: React.FC = () => {
                   className="block group relative bg-slate-900 rounded-[2.5rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-800 hover:border-brand-500/30 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-500"
                 >
                   <div className="relative h-72 overflow-hidden">
-                    <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-40 group-hover:opacity-20 transition-opacity duration-500 z-10 mix-blend-multiply`}></div>
                     <img 
                       src={project.images[0]} 
                       alt={project.title} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                     />
                     <div className="absolute top-6 left-6 z-20">
                       <span className="px-4 py-2 bg-slate-900/90 backdrop-blur-md text-white text-xs font-bold rounded-full shadow-sm uppercase tracking-wider border border-slate-800">
@@ -164,7 +163,7 @@ const Projects: React.FC = () => {
                   
                   <div className="p-10 relative">
                     <div className="absolute -top-10 right-10 w-20 h-20 bg-slate-900 rounded-2xl shadow-xl flex items-center justify-center z-30 transform group-hover:-translate-y-2 transition-transform duration-300 border border-slate-800">
-                      <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${project.color} opacity-20 absolute`}></div>
+                      
                       <ExternalLink className="w-8 h-8 text-white relative z-10" />
                     </div>
 
@@ -174,7 +173,7 @@ const Projects: React.FC = () => {
                     <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-brand-400 transition-colors">
                       {project.title}
                     </h3>
-                    <p className="text-slate-400 mb-8 leading-relaxed font-light text-lg">
+                    <p className="text-slate-400 mb-8 leading-relaxed font-light text-lg line-clamp-3 sm:line-clamp-none">
                       {getLocalizedDescription(project)}
                     </p>
                     

@@ -1,0 +1,197 @@
+/* Obecne prvky stranky - pouzity i v editoru v administraci */
+body {
+  color: #969494;
+  font: 11px Arial, sans-serif;
+  /*background-color: #1F1A17;*/
+  background-color: #000000;
+  scrollbar-track-color: #737070;
+  scrollbar-face-color: #E87817;
+  scrollbar-highlight-color: #000000;
+  scrollbar-3dlight-color: #000000;
+  scrollbar-darkshadow-color: #000000;
+  scrollbar-shadow-color: #000000;
+  scrollbar-arrow-color: #737070;
+}
+
+h1 {
+  color: #E87817;
+  margin: 0 0 10px 0; 
+  padding: 0;
+  font-size: 22px;
+}
+
+h2 {
+  color: #E87817;
+  margin: 10px 0 5px 0; 
+  padding: 0;
+  font-size: 15px;
+}
+
+h3 {
+  color: #E87817;
+  margin: 0 0 5px 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+p {
+  color: #969494;
+  margin: 0 0 5px 0;
+  text-align: justify;
+}
+
+table {
+  color: #969494;
+  font: 11px Arial, sans-serif;
+}
+
+td {
+  vertical-align: top;
+}
+
+ul {
+  margin: 0;
+  padding: 10px 0 0 30px;
+}
+
+li {
+  margin: 3px 0 0 0;
+  list-style-type: square;
+}
+
+a, a:link, a:visited {
+  color: #DFDFDF;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+.homepage_watchword {
+  position: absolute;
+  left: 838px;
+  top: 500px;
+  font: bold 22px Arial Narrow, serif;
+  _font-size: 20px;
+}
+
+.file_icon {
+  margin: 0 4px -4px 0;
+  border: none;
+}
+
+.gallery_preview {
+  float: left;
+  width: 200px;
+  height: 190px;
+  margin: 0;
+  background-color: #000000;
+}
+  
+.gallery_preview img {
+  border: none;
+}
+
+.gallery_preview .link {
+  margin: -2px 0 0 -10px;
+  padding: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #000000;
+}
+
+.gallery_preview .link a, .gallery_preview .link a:hover, .gallery_preview .link a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.gallery_preview .link a:hover {
+  text-decoration: underline;
+}
+
+#gallery_description {
+  color: #E87817;
+  font: bold 15px Arial, serif;
+  margin-top: 10px; 
+}
+
+#gallery_description #description_in {
+  color: #969494;
+}
+
+.reference {
+  margin: 0;
+}
+
+.reference img {
+  border: none;
+}
+
+.reference_type_1 {
+  float: left;
+  margin: 20px 0 0 25px;
+  _margin-left: 20px;
+}
+
+.reference_type_2 {
+  float: left;
+  margin: 20px 0 0 10px;
+}
+
+.reference_type_3 {
+  float: left;
+  margin: 20px 0 0 10px;
+}
+
+.attached_files_title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.attached_files {
+  margin-left: 5px;
+}
+
+.attached_files img.file_icon {
+  margin: 5px 3px -4px 0;
+}
+
+.attached_files a, .attached_files a:link, .attached_files a:visited {
+  color: #969494;
+  text-decoration: underline;
+}
+
+.attached_files a:hover {
+  text-decoration: none;
+}
+
+.pages {
+  margin: 5px 170px 5px auto;
+  text-align: center;
+}
+
+.bull {
+  padding: 0 5px 0 5px;
+}
+
+.red {
+  color: #FF0000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.blue {
+  color: #0000FF;
+  font-weight: bold;
+  text-align: center;
+}
+
+.image_view {
+  border: none;
+}

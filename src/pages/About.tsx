@@ -67,7 +67,7 @@ const About: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed"
+            className="hidden sm:block text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed"
           >
             {t('about.description')}
           </motion.p>
@@ -98,10 +98,10 @@ const About: React.FC = () => {
                 <motion.div 
                   key={index} 
                   whileHover={{ scale: 1.05 }}
-                  className="bg-slate-900 p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-800 text-center"
+                  className="bg-slate-900 min-h-36 p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-800 text-center flex flex-col items-center justify-center"
                 >
-                  <div className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-brand-400 to-amber-300 mb-2">{stat.value}</div>
-                  <div className="text-slate-500 font-medium text-sm uppercase tracking-wider">{stat.label}</div>
+                  <div className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-brand-400 to-amber-300 mb-2">{stat.value}</div>
+                  <div className="text-slate-500 font-medium text-xs sm:text-sm uppercase tracking-wider leading-tight">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -179,7 +179,7 @@ const About: React.FC = () => {
           className="relative bg-slate-900 rounded-[3rem] p-12 md:p-20 text-center text-white overflow-hidden shadow-2xl border border-slate-800"
         >
           <div className="absolute inset-0 z-0">
-            <img src="https://picsum.photos/seed/abstract-dark/1200/400" alt="Abstract" className="w-full h-full object-cover opacity-20 mix-blend-overlay" referrerPolicy="no-referrer" />
+            <img src={resolveAssetUrl('/image/DetailedGraphics.jpg')} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-20 mix-blend-overlay" />
             <div className="absolute inset-0 bg-gradient-to-r from-brand-900/60 to-slate-900/90"></div>
           </div>
           

@@ -1,68 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Search, Palette, Box, RotateCcw, FileText, Settings, ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import marketResearch from '../../image/Support.jpg';
-import designGraphics from '../../image/DetailedGraphics.jpg';
-import constructionSolutions from '../../image/ManufacturingSolution.jpg';
-import reverseEngineering from '../../image/ReverseEngineering.png';
-import drawingDocumentation from '../../image/TechnicalDrawing.jpg';
-import productionSupport from '../../image/ManufacuringSolutions.png';
+import { resolveAssetUrl } from '../utils/assetPath';
+import { servicesData } from '../data/services';
 
 const Services: React.FC = () => {
   const { t } = useTranslation();
+  const [expandedService, setExpandedService] = useState<string | null>(null);
 
-  const services = [
-    {
-      id: 'pruzkum-trhu',
-      icon: <Search className="w-8 h-8 text-brand-500" />,
-      title: t('services.s1.title'),
-      description: t('services.s1.desc'),
-      features: [t('services.s1.f1'), t('services.s1.f2'), t('services.s1.f3'), t('services.s1.f4')],
-        image: marketResearch
-    },
-    {
-      id: 'design-grafika',
-      icon: <Palette className="w-8 h-8 text-brand-500" />,
-      title: t('services.s2.title'),
-      description: t('services.s2.desc'),
-      features: [t('services.s2.f1'), t('services.s2.f2'), t('services.s2.f3'), t('services.s2.f4')],
-        image: designGraphics
-    },
-    {
-      id: 'konstrukcni-reseni',
-      icon: <Box className="w-8 h-8 text-brand-500" />,
-      title: t('services.s3.title'),
-      description: t('services.s3.desc'),
-      features: [t('services.s3.f1'), t('services.s3.f2'), t('services.s3.f3'), t('services.s3.f4')],
-        image: constructionSolutions
-    },
-    {
-      id: 'reverzni-inzenyrstvi',
-      icon: <RotateCcw className="w-8 h-8 text-brand-500" />,
-      title: t('services.s4.title'),
-      description: t('services.s4.desc'),
-      features: [t('services.s4.f1'), t('services.s4.f2'), t('services.s4.f3'), t('services.s4.f4')],
-        image: reverseEngineering
-    },
-    {
-      id: 'vykresova-dokumentace',
-      icon: <FileText className="w-8 h-8 text-brand-500" />,
-      title: t('services.s5.title'),
-      description: t('services.s5.desc'),
-      features: [t('services.s5.f1'), t('services.s5.f2'), t('services.s5.f3'), t('services.s5.f4')],
-        image: drawingDocumentation
-    },
-    {
-      id: 'podpora-vyroby',
-      icon: <Settings className="w-8 h-8 text-brand-500" />,
-      title: t('services.s6.title'),
-      description: t('services.s6.desc'),
-      features: [t('services.s6.f1'), t('services.s6.f2'), t('services.s6.f3'), t('services.s6.f4')],
-        image: productionSupport
-    }
-  ];
+  const services = servicesData.map(({ id, key, icon: Icon, image }) => ({
+    id,
+    icon: <Icon className="w-8 h-8 text-brand-500" />,
+    title: t(`${key}.title`),
+    description: t(`${key}.desc`),
+    features: [t(`${key}.f1`), t(`${key}.f2`), t(`${key}.f3`), t(`${key}.f4`)],
+    image
+  }));
 
   return (
     <div className="min-h-screen bg-slate-950 pt-20 pb-24 overflow-hidden">
@@ -87,7 +42,7 @@ const Services: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl md:text-2xl text-slate-400 font-light leading-relaxed"
+            className="hidden sm:block text-xl md:text-2xl text-slate-400 font-light leading-relaxed"
           >
             {t('services.description')}
           </motion.p>
@@ -96,7 +51,7 @@ const Services: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <motion.div
-              key={index}
+              key={service.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
@@ -118,9 +73,18 @@ const Services: React.FC = () => {
                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-brand-400 transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-slate-400 mb-8 flex-grow leading-relaxed font-light">
+                <p className={`text-slate-400 mb-3 sm:mb-8 flex-grow leading-relaxed font-light ${expandedService === service.id ? '' : 'line-clamp-2 sm:line-clamp-none'}`}>
                   {service.description}
                 </p>
+                <button
+                  type="button"
+                  onClick={() => setExpandedService(expandedService === service.id ? null : service.id)}
+                  className="sm:hidden inline-flex items-center gap-1 self-start text-brand-400 font-semibold mb-6"
+                  aria-expanded={expandedService === service.id}
+                >
+                  {expandedService === service.id ? t('common.readLess', { defaultValue: 'Zobrazit méně' }) : t('common.readMore', { defaultValue: 'Zobrazit více' })}
+                  {expandedService === service.id ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+                </button>
                 <ul className="space-y-3 border-t border-slate-800 pt-6 mb-6">
                   {service.features.map((feature, fIndex) => (
                     <li key={fIndex} className="flex items-center text-slate-300 font-medium text-sm">
@@ -141,7 +105,7 @@ const Services: React.FC = () => {
           className="mt-24 relative bg-brand-500 rounded-[3rem] p-12 md:p-20 text-center text-white overflow-hidden shadow-2xl"
         >
           <div className="absolute inset-0 z-0">
-            <img src="https://picsum.photos/seed/abstract-orange/1200/400" alt="Abstract" className="w-full h-full object-cover opacity-20 mix-blend-overlay" referrerPolicy="no-referrer" />
+            <img src={resolveAssetUrl('/image/designdocumentation.png')} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-20 mix-blend-overlay" />
             <div className="absolute inset-0 bg-gradient-to-r from-brand-600/80 to-brand-900/90"></div>
           </div>
           <div className="relative z-10">

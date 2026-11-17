@@ -12,7 +12,7 @@ export interface Project {
 }
 
 const rawProjectsData: Project[] = [
-  // ============ TRANSPORT ============
+  // ============ TRANSPORT & MACHINES ============
   {
     id: 'transport-skoda-tramvaje',
     title: 'Tramvaj pro Prahu',
@@ -35,18 +35,18 @@ const rawProjectsData: Project[] = [
     color: 'from-blue-600 to-cyan-500'
   },
   {
-    id: 'transport-skoda-metro',
-    title: 'Metrážní vozidla ŠKODA',
-    client: 'ŠKODA Transportation',
+    id: 'transport-skoda-obrabeci-stroje',
+    title: 'Obráběcí stroje ŠKODA',
+    client: 'ŠKODA Machine Tool',
     categoryId: 'transport',
-    description: 'Metropolitan train vehicle design with advanced cabin layout, comfort optimization, and integration of modern rail technology systems.',
+    description: 'Industrial design of heavy horizontal boring and milling machines such as the RS 160t. Machine covers, operator ergonomics and a consistent brand identity across the product line.',
     images: [
       '/image/gallery/1248879228_image_skoda-mt-1.jpg',
       '/image/gallery/1248879258_image_skoda-mt-2.jpg',
       '/image/gallery/1248879274_image_skoda-mt-3.jpg',
       '/image/gallery/1248879315_image_skoda-mt-4.jpg'
     ],
-    tags: ['Metro Design', 'Rail Transport', 'Urban Mobility'],
+    tags: ['Machine Tools', 'Industrial Design', 'Heavy Machinery'],
     color: 'from-blue-700 to-indigo-500'
   },
   {
@@ -78,7 +78,8 @@ const rawProjectsData: Project[] = [
       '/image/gallery/1248717725_image_tedom-novinka-2008.jpg',
       '/image/gallery/1248873106_image_tedom-6.jpg',
       '/image/gallery/1248873159_image_tedom-8.jpg',
-      '/image/gallery/1253800772_image_tedom-5.jpg'
+      '/image/gallery/1253800772_image_tedom-5.jpg',
+      '/image/gallery/1248717289_image_design-evo-ii-bb.jpg'
     ],
     tags: ['Energy Systems', 'Industrial Design', 'Thermodynamics'],
     color: 'from-orange-600 to-red-500'
@@ -133,21 +134,6 @@ const rawProjectsData: Project[] = [
     tags: ['Thermal Systems', 'Industrial Cooling', 'HVAC'],
     color: 'from-cyan-600 to-blue-500'
   },
-  {
-    id: 'transport-seat-vlaky',
-    title: 'Sedadla pro vlaky',
-    client: 'Alstom',
-    categoryId: 'transport',
-    description: 'Railway seating systems design combining passenger comfort, durability, and easy maintenance. Ergonomic studies and material optimization.',
-    images: [
-      '/image/gallery/1248946574_image_al-t-01.jpg',
-      '/image/gallery/1248947907_image_al-tr-07.jpg',
-      '/image/gallery/1248947978_image_al-tr-08.jpg',
-      '/image/gallery/1248948008_image_al-tr-09.jpg'
-    ],
-    tags: ['Seating Design', 'Rail Transport', 'Comfort Ergonomics'],
-    color: 'from-indigo-600 to-purple-500'
-  },
 
   // ============ MEDICINE ============
   {
@@ -199,7 +185,8 @@ const rawProjectsData: Project[] = [
       '/image/gallery/1250251943_image_btl-5000-004.jpg',
       '/image/gallery/1250251964_image_btl-5000-003.jpg',
       '/image/gallery/1250251996_image_btl-5000-006.jpg',
-      '/image/gallery/1250252215_image_btl-5000-007.jpg'
+      '/image/gallery/1250252215_image_btl-5000-007.jpg',
+      '/image/gallery/1250252367_image_btl-001.jpg'
     ],
     tags: ['Medical Equipment', 'Physical Therapy', 'Professional Device'],
     color: 'from-red-700 to-orange-500'
@@ -237,7 +224,8 @@ const rawProjectsData: Project[] = [
       '/image/gallery/1250245104_image_amv-005.jpg',
       '/image/gallery/1250245161_image_amv-pumpa-001.gif',
       '/image/text/1250849374_amv-oceneni-male.jpg',
-      '/image/text/1250850923_amv-oceneni-medicalfair2008.jpg'
+      '/image/text/1250850923_amv-oceneni-medicalfair2008.jpg',
+      '/image/gallery/1250245129_image_prumvzor2-copy.jpg'
     ],
     tags: ['Medical Device', 'Infusion Systems', 'Healthcare'],
     color: 'from-green-600 to-emerald-500'
@@ -304,47 +292,12 @@ const rawProjectsData: Project[] = [
       '/image/gallery/1250253370_image_ibc-003.jpg',
       '/image/gallery/1250253384_image_ibc-004.jpg',
       '/image/gallery/1250253403_image_ibc-005.jpg',
-      '/image/gallery/1250253428_image_ibc-006.jpg'
+      '/image/gallery/1250253428_image_ibc-006.jpg',
+      '/image/gallery/1250253444_image_sls-dily1-copy.jpg',
+      '/image/gallery/1250253609_image_sls-model.jpg'
     ],
     tags: ['Cosmetic Device', 'Aesthetic Technology', 'Beauty Equipment'],
     color: 'from-purple-600 to-pink-500'
-  },
-  {
-    id: 'medicine-dzd-dragice-ohrivace',
-    title: 'Ohřívače DZ Dražice',
-    client: 'Dražice',
-    categoryId: 'medicine',
-    description: 'Heating and water management systems design. Thermal efficiency optimization, industrial manufacturing processes, and installation integration.',
-    images: [
-      '/image/gallery/1250252953_image_dzd-ctverec-04.jpg',
-      '/image/gallery/1250253623_image_dzd-ctverec-01.jpg',
-      '/image/gallery/1250253682_image_dzd-ctverec-02.jpg',
-      '/image/gallery/1250253698_image_dzd-ctverec-03.jpg',
-      '/image/gallery/1250253757_image_dzd-ctverec-05.jpg',
-      '/image/gallery/1250253878_image_dzd-ctverec-07.jpg',
-      '/image/gallery/1250253887_image_dzd-kulaty-02.jpg'
-    ],
-    tags: ['Heating Systems', 'Water Technology', 'Industrial Equipment'],
-    color: 'from-yellow-600 to-amber-500'
-  },
-  {
-    id: 'medicine-kessler-dokumentace',
-    title: 'Dokumentace Franz Kessler',
-    client: 'Franz Kessler',
-    categoryId: 'medicine',
-    description: 'Technical documentation and visualization of medical and industrial equipment. Comprehensive design research and product photography for technical communication.',
-    images: [
-      '/image/gallery/1250246933_image_kessler-001.jpg',
-      '/image/gallery/1250246952_image_kessler-002.jpg',
-      '/image/gallery/1250247000_image_kessler-003.jpg',
-      '/image/gallery/1250247014_image_kessler-004.jpg',
-      '/image/gallery/1250247029_image_kessler-005.jpg',
-      '/image/gallery/1250247049_image_kessler-006.jpg',
-      '/image/gallery/1250247065_image_kessler-007.jpg',
-      '/image/gallery/1250247076_image_kessler-008.jpg'
-    ],
-    tags: ['Technical Documentation', 'Product Photography', 'Design Documentation'],
-    color: 'from-slate-600 to-slate-500'
   },
 
   // ============ ELECTRONICS ============
@@ -361,7 +314,9 @@ const rawProjectsData: Project[] = [
       '/image/gallery/1249047943_image_jablotron-e-001.jpg',
       '/image/gallery/1249048130_image_jablotron-p-002.jpg',
       '/image/gallery/1249048571_image_jablotron-p-005-.jpg',
-      '/image/gallery/1250601433_image_jablotron-titulka.jpg'
+      '/image/gallery/1250601433_image_jablotron-titulka.jpg',
+      '/image/gallery/1249048226_image_ov-3-copy.jpg',
+      '/image/gallery/1249048262_image_ov-2-copy.jpg'
     ],
     tags: ['Security Systems', 'Smart Home', 'Electronics'],
     color: 'from-slate-700 to-slate-600'
@@ -403,7 +358,11 @@ const rawProjectsData: Project[] = [
       '/image/gallery/1250172722_image_alimex-t28-004.jpg',
       '/image/gallery/1250693138_image_alimex-term-003.jpg',
       '/image/gallery/1251106158_image_alimex-open.jpg',
-      '/image/gallery/1251107119_image_alimex-term-014-b.jpg'
+      '/image/gallery/1251107119_image_alimex-term-014-b.jpg',
+      '/image/gallery/1248946574_image_al-t-01.jpg',
+      '/image/gallery/1248947907_image_al-tr-07.jpg',
+      '/image/gallery/1248947978_image_al-tr-08.jpg',
+      '/image/gallery/1248948008_image_al-tr-09.jpg'
     ],
     tags: ['Telecom Equipment', 'Network Infrastructure', 'Industrial Design'],
     color: 'from-blue-700 to-blue-600'
@@ -421,28 +380,11 @@ const rawProjectsData: Project[] = [
       '/image/gallery/1250243422_image_konektel-ridic-006.jpg',
       '/image/gallery/1250243437_image_konektel-ridic-007.jpg',
       '/image/gallery/1250243459_image_konektel-ridic-008.jpg',
-      '/image/gallery/1250243509_image_konektel-ridic-010.jpg'
+      '/image/gallery/1250243509_image_konektel-ridic-010.jpg',
+      '/image/gallery/1251194044_image_fotka-ufon-mala.jpg'
     ],
     tags: ['Industrial Control', 'Automation', 'Electronics'],
     color: 'from-green-700 to-green-600'
-  },
-  {
-    id: 'electronics-cic-datove-terminaly',
-    title: 'Datový terminál CIC',
-    client: 'CIC',
-    categoryId: 'electronics',
-    description: 'Portable data entry and processing terminals for field operations. Rugged design, touchscreen interfaces, and wireless connectivity for mobile workforce solutions.',
-    images: [
-      '/image/gallery/1250243770_image_cic-001.jpg',
-      '/image/gallery/1250243789_image_cic-002.jpg',
-      '/image/gallery/1250243806_image_cic-003.jpg',
-      '/image/gallery/1250243938_image_cic-004.jpg',
-      '/image/gallery/1250244053_image_cic-005.jpg',
-      '/image/gallery/1250244479_image_cic-005.jpg',
-      '/image/gallery/1250244510_image_cic-006.jpg'
-    ],
-    tags: ['Mobile Devices', 'Data Collection', 'Field Equipment'],
-    color: 'from-indigo-700 to-indigo-600'
   },
   {
     id: 'electronics-mikro-jizdenky',
@@ -496,10 +438,8 @@ const rawProjectsData: Project[] = [
       '/image/gallery/1251194349_image_amit-001.jpg',
       '/image/gallery/1251194369_image_amit-002.jpg',
       '/image/gallery/1251194388_image_amit-003.jpg',
-      '/image/gallery/1250518980_image_mk4-1.jpg',
-      '/image/gallery/1250519134_image_mk1-1.jpg',
-      '/image/gallery/1250519161_image_mk9-1.jpg',
-      '/image/gallery/1250692767_image_amit-titulka.jpg'
+      '/image/gallery/1250692767_image_amit-titulka.jpg',
+      '/image/gallery/1250692796_image_noa70_06.jpg'
     ],
     tags: ['Industrial HMI', 'Control Systems', 'Automation'],
     color: 'from-teal-700 to-teal-600'
@@ -520,25 +460,6 @@ const rawProjectsData: Project[] = [
     ],
     tags: ['Network Equipment', 'Telecom Infrastructure', 'Panel Systems'],
     color: 'from-cyan-700 to-blue-600'
-  },
-  {
-    id: 'electronics-singing-rock-komponenty',
-    title: 'Komponenty Singing Rock',
-    client: 'Singing Rock',
-    categoryId: 'electronics',
-    description: 'Outdoor and safety equipment components for adventure sports. Technical material optimization, weather resistance, and safety certification compliance.',
-    images: [
-      '/image/gallery/1250251573_image_singing-01.jpg',
-      '/image/gallery/1250251583_image_singing-02.jpg',
-      '/image/gallery/1250251594_image_singing-03.jpg',
-      '/image/gallery/1250251606_image_singing-04.jpg',
-      '/image/gallery/1250251618_image_singing-05.jpg',
-      '/image/gallery/1250251637_image_singing-06.jpg',
-      '/image/gallery/1250692238_image_singing-07.jpg',
-      '/image/gallery/1250692365_image_singing-08.jpg'
-    ],
-    tags: ['Outdoor Gear', 'Safety Equipment', 'Adventure Sports'],
-    color: 'from-red-700 to-red-600'
   },
 
   // ============ FURNITURE & WEAPONS ============
@@ -597,7 +518,7 @@ const rawProjectsData: Project[] = [
   {
     id: 'furniture-tau-seating',
     title: 'Sedadla TAU',
-    client: 'TAU Design',
+    client: 'tauCETI',
     categoryId: 'weapons_furniture',
     description: 'Modern seating system with modular design philosophy. Upholstery optimization, frame engineering, and flexible spatial arrangements.',
     images: [
@@ -615,11 +536,11 @@ const rawProjectsData: Project[] = [
     color: 'from-lime-600 to-green-500'
   },
   {
-    id: 'furniture-kora-seating',
-    title: 'Židle KORA',
-    client: 'KORA Design',
+    id: 'weapons-kora-revolvery',
+    title: 'Revolvery KORA',
+    client: 'KORA',
     categoryId: 'weapons_furniture',
-    description: 'Sophisticated seating collection featuring curved forms and premium materials. Craftsmanship focus, wood bending techniques, and luxury finish options.',
+    description: 'Design and engineering of revolvers including production tooling. 3D modelling of the frame, mechanism and grip, and design of casting moulds.',
     images: [
       '/image/gallery/1250174442_image_kora-002-black.jpg',
       '/image/gallery/1250174457_image_kora-001-black.jpg',
@@ -630,26 +551,8 @@ const rawProjectsData: Project[] = [
       '/image/gallery/1250174564_image_kora-008-copy.jpg',
       '/image/gallery/1250236365_image_kora-009.jpg'
     ],
-    tags: ['Premium Seating', 'Wood Furniture', 'Interior Design'],
+    tags: ['Firearms Design', 'Mould Design', 'Engineering'],
     color: 'from-amber-700 to-yellow-600'
-  },
-  {
-    id: 'furniture-botas-nabytek',
-    title: 'Nábytek BOTAS',
-    client: 'BOTAS',
-    categoryId: 'weapons_furniture',
-    description: 'Contemporary furniture collection combining aesthetics and functionality. Sustainable material selection, modular design systems, and manufacturing optimization.',
-    images: [
-      '/image/gallery/1250238667_image_botas-falcon-002.jpg',
-      '/image/gallery/1250238731_image_botas-falcon-003.jpg',
-      '/image/gallery/1250238766_image_botas-falcon-004.jpg',
-      '/image/gallery/1250238826_image_botas-new-001.jpg',
-      '/image/gallery/1250238840_image_botas-new-002.jpg',
-      '/image/gallery/1250240985_image_botas-falcon-001.jpg',
-      '/image/gallery/1273143924_image_botas-falcon-005.jpg'
-    ],
-    tags: ['Furniture', 'Interior Design', 'Sustainable Design'],
-    color: 'from-brown-600 to-amber-500'
   },
   {
     id: 'weapons-grand-pistole',
@@ -669,13 +572,11 @@ const rawProjectsData: Project[] = [
     tags: ['Firearms Design', 'Mechanical Engineering', 'Precision Craft'],
     color: 'from-gray-800 to-slate-700'
   },
-
-  // ============ OTHER PRODUCTS ============
   {
     id: 'other-czub-design',
-    title: 'Produkty České zbrojovky ČÚZK',
-    client: 'Česká zbrojovka ČÚZK',
-    categoryId: 'other',
+    title: 'Produkty České zbrojovky CZUB',
+    client: 'Česká zbrojovka CZUB',
+    categoryId: 'weapons_furniture',
     description: 'Industrial and consumer products from renowned Czech weapons manufacturer. Design and technical documentation of diverse product portfolio.',
     images: [
       '/image/gallery/1250173854_image_czub-005.jpg',
@@ -688,6 +589,120 @@ const rawProjectsData: Project[] = [
     ],
     tags: ['Industrial Products', 'Czech Manufacturing', 'Design'],
     color: 'from-slate-700 to-gray-600'
+  },
+  {
+    id: 'furniture-haas-sohn-kamna',
+    title: 'Krbová kamna HAAS+SOHN',
+    client: 'HAAS+SOHN',
+    categoryId: 'weapons_furniture',
+    description: 'Design of wood-burning stoves for HAAS+SOHN. Concept sketches, styling variants and 3D models for a range of stove models.',
+    images: [
+      '/image/gallery/1250177656_image_pict0006w.jpg',
+      '/image/gallery/1250177675_image_kubistic-b-copy.jpg',
+      '/image/gallery/1250177731_image_oristano-antrazit.jpg',
+      '/image/gallery/1250177755_image_vestre_cervena_300_dpi.jpg',
+      '/image/gallery/1250177777_image_bergamo-str.-dv..jpg',
+      '/image/gallery/1250177792_image_marma-cervena.jpg',
+      '/image/gallery/1250518980_image_mk4-1.jpg',
+      '/image/gallery/1250519134_image_mk1-1.jpg',
+      '/image/gallery/1250519161_image_mk9-1.jpg'
+    ],
+    tags: ['Product Design', 'Heating', 'Sketching'],
+    color: 'from-purple-600 to-pink-500'
+  },
+
+  // ============ OTHER PRODUCTS ============
+  {
+    id: 'medicine-dzd-dragice-ohrivace',
+    title: 'Ohřívače DZ Dražice',
+    client: 'Dražice',
+    categoryId: 'other',
+    description: 'Heating and water management systems design. Thermal efficiency optimization, industrial manufacturing processes, and installation integration.',
+    images: [
+      '/image/gallery/1250252953_image_dzd-ctverec-04.jpg',
+      '/image/gallery/1250253623_image_dzd-ctverec-01.jpg',
+      '/image/gallery/1250253682_image_dzd-ctverec-02.jpg',
+      '/image/gallery/1250253698_image_dzd-ctverec-03.jpg',
+      '/image/gallery/1250253757_image_dzd-ctverec-05.jpg',
+      '/image/gallery/1250253878_image_dzd-ctverec-07.jpg',
+      '/image/gallery/1250253887_image_dzd-kulaty-02.jpg'
+    ],
+    tags: ['Heating Systems', 'Water Technology', 'Industrial Equipment'],
+    color: 'from-yellow-600 to-amber-500'
+  },
+  {
+    id: 'medicine-kessler-dokumentace',
+    title: 'Dokumentace Franz Kessler',
+    client: 'Franz Kessler',
+    categoryId: 'other',
+    description: 'Technical documentation and visualization of medical and industrial equipment. Comprehensive design research and product photography for technical communication.',
+    images: [
+      '/image/gallery/1250246933_image_kessler-001.jpg',
+      '/image/gallery/1250246952_image_kessler-002.jpg',
+      '/image/gallery/1250247000_image_kessler-003.jpg',
+      '/image/gallery/1250247014_image_kessler-004.jpg',
+      '/image/gallery/1250247029_image_kessler-005.jpg',
+      '/image/gallery/1250247049_image_kessler-006.jpg',
+      '/image/gallery/1250247065_image_kessler-007.jpg',
+      '/image/gallery/1250247076_image_kessler-008.jpg'
+    ],
+    tags: ['Technical Documentation', 'Product Photography', 'Design Documentation'],
+    color: 'from-slate-600 to-slate-500'
+  },
+  {
+    id: 'electronics-cic-datove-terminaly',
+    title: 'Datový terminál CIC',
+    client: 'CIC',
+    categoryId: 'other',
+    description: 'Portable data entry and processing terminals for field operations. Rugged design, touchscreen interfaces, and wireless connectivity for mobile workforce solutions.',
+    images: [
+      '/image/gallery/1250243770_image_cic-001.jpg',
+      '/image/gallery/1250243789_image_cic-002.jpg',
+      '/image/gallery/1250243806_image_cic-003.jpg',
+      '/image/gallery/1250243938_image_cic-004.jpg',
+      '/image/gallery/1250244053_image_cic-007.jpg',
+      '/image/gallery/1250244479_image_cic-005.jpg',
+      '/image/gallery/1250244510_image_cic-006.jpg'
+    ],
+    tags: ['Mobile Devices', 'Data Collection', 'Field Equipment'],
+    color: 'from-indigo-700 to-indigo-600'
+  },
+  {
+    id: 'electronics-singing-rock-komponenty',
+    title: 'Komponenty Singing Rock',
+    client: 'Singing Rock',
+    categoryId: 'other',
+    description: 'Outdoor and safety equipment components for adventure sports. Technical material optimization, weather resistance, and safety certification compliance.',
+    images: [
+      '/image/gallery/1250251573_image_singing-01.jpg',
+      '/image/gallery/1250251583_image_singing-02.jpg',
+      '/image/gallery/1250251594_image_singing-03.jpg',
+      '/image/gallery/1250251606_image_singing-04.jpg',
+      '/image/gallery/1250251618_image_singing-05.jpg',
+      '/image/gallery/1250251637_image_singing-06.jpg',
+      '/image/gallery/1250692238_image_singing-07.jpg',
+      '/image/gallery/1250692365_image_singing-08.jpg'
+    ],
+    tags: ['Outdoor Gear', 'Safety Equipment', 'Adventure Sports'],
+    color: 'from-red-700 to-red-600'
+  },
+  {
+    id: 'other-botas-obuv',
+    title: 'Obuv BOTAS',
+    client: 'BOTAS',
+    categoryId: 'other',
+    description: 'Footwear design for the Czech shoe manufacturer BOTAS. Concept sketches of soles and uppers, styling variants and documentation for production.',
+    images: [
+      '/image/gallery/1250238667_image_botas-falcon-002.jpg',
+      '/image/gallery/1250238731_image_botas-falcon-003.jpg',
+      '/image/gallery/1250238766_image_botas-falcon-004.jpg',
+      '/image/gallery/1250238826_image_botas-new-001.jpg',
+      '/image/gallery/1250238840_image_botas-new-002.jpg',
+      '/image/gallery/1250240985_image_botas-falcon-001.jpg',
+      '/image/gallery/1273143924_image_botas-falcon-005.jpg'
+    ],
+    tags: ['Footwear Design', 'Sketching', 'Consumer Products'],
+    color: 'from-brown-600 to-amber-500'
   },
   {
     id: 'other-patron-koljarek',
@@ -741,45 +756,26 @@ const rawProjectsData: Project[] = [
     color: 'from-slate-800 to-slate-700'
   },
   {
-    id: 'other-sls-model',
-    title: 'SLS Model maketování',
-    client: 'SLS Technology',
+    id: 'other-czechlabs-obojek',
+    title: 'Telemetrický obojek CzechLabs',
+    client: 'CzechLabs',
     categoryId: 'other',
-    description: 'Selective Laser Sintering rapid prototyping and scale model design. Advanced 3D printing technology, iterative design validation, and prototype production.',
+    description: 'Housing design for a telemetry collar unit. Compact enclosure for electronics and battery, mechanical design and 3D modelling.',
     images: [
-      '/image/gallery/1250253444_image_sls-dily1-copy.jpg',
-      '/image/gallery/1250253609_image_sls-model.jpg'
+      '/image/gallery/1250246526_image_obojek-001.jpg',
+      '/image/gallery/1250246568_image_obojek-002.jpg',
+      '/image/gallery/1250246596_image_obojek-003.jpg',
+      '/image/gallery/1250246622_image_obojek-004.jpg',
+      '/image/gallery/1250246639_image_obojek-005.jpg'
     ],
-    tags: ['3D Printing', 'Rapid Prototyping', 'Manufacturing'],
-    color: 'from-indigo-600 to-blue-500'
-  },
-  {
-    id: 'other-general-design',
-    title: 'Design a průmyslový rozvoj',
-    client: 'Exact Technology',
-    categoryId: 'other',
-    description: 'Comprehensive design consultation and industrial development services spanning multiple product categories and client industries.',
-    images: [
-      '/image/gallery/1248717289_image_design-evo-ii-bb.jpg',
-      '/image/gallery/1249048226_image_ov-3-copy.jpg',
-      '/image/gallery/1249048262_image_ov-2-copy.jpg',
-      '/image/gallery/1250177656_image_pict0006w.jpg',
-      '/image/gallery/1250177675_image_kubistic-b-copy.jpg',
-      '/image/gallery/1250177731_image_oristano-antrazit.jpg',
-      '/image/gallery/1250177755_image_vestre_cervena_300_dpi.jpg',
-      '/image/gallery/1250177777_image_bergamo-str.-dv..jpg',
-      '/image/gallery/1250177792_image_marma-cervena.jpg',
-      '/image/gallery/1250692796_image_noa70_06.jpg',
-      '/image/gallery/1251194044_image_fotka-ufon-mala.jpg'
-    ],
-    tags: ['Design Consulting', 'Product Development', 'Industrial Design'],
-    color: 'from-purple-600 to-pink-500'
+    tags: ['Enclosure Design', 'Telemetry', 'Engineering'],
+    color: 'from-teal-600 to-emerald-500'
   }
 ];
 
 export const projectsData: Project[] = rawProjectsData.map((project) => ({
   ...project,
-  images: project.images.map(resolveAssetUrl)
+  images: project.images.map((image) => resolveAssetUrl(image.replace('_image_', '_original_')))
 }));
 
 export default projectsData;

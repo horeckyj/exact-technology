@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Tailwind v4 limits hover: to devices reporting (hover: hover). Apply it on every device,
+   so hover effects (e.g. greyscale -> colour on projects and references) also work on
+   touch laptops and react to a tap on phones. */
+@custom-variant hover (&:hover);
+
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --color-brand-50: #fff3e5;

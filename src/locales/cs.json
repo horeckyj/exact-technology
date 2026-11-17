@@ -1,4 +1,8 @@
 {
+  "common": {
+    "readMore": "Zobrazit více",
+    "showLess": "Zobrazit méně"
+  },
   "header": {
     "nav": {
       "home": "Úvod",
@@ -236,7 +240,7 @@
     "story": {
       "title": "Náš příběh",
       "p1": "Naše zkušenosti se datují již od roku 1990, kdy jsme začínali jako designové studio. Postupem času jsme si uvědomili, že pro perfektní výrobek je třeba úzce propojit design s konstrukcí.",
-      "p2": "Proto jsme v roce 2001 založili společnost EXACT Technology s.r.o.a uplynulé roky jsme přivedli k životu nespočet projektů z dopravy, medicíny, strojírenství i spotřebního zboží, vždy s cílem zajistit jedinečný tvar a konkurenceschopnost na trhu."
+      "p2": "Proto jsme v roce 2001 založili společnost EXACT Technology s.r.o. a uplynulé roky jsme přivedli k životu nespočet projektů z dopravy, medicíny, strojírenství i spotřebního zboží, vždy s cílem zajistit jedinečný tvar a konkurenceschopnost na trhu."
     },
     "stats": {
       "s1": "let zkušeností v oboru designu a konstrukce",
@@ -318,6 +322,8 @@
   },
   "projectDetail": {
     "backToProjects": "Zpět na projekty",
+    "moreInfo": "Více informací o projektu",
+    "openImage": "Otevřít obrázek",
     "aboutProject": "O projektu",
     "technologies": "Použité technologie",
     "keyResults": "Klíčové výsledky",
