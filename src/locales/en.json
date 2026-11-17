@@ -90,6 +90,7 @@
   },
   "services": {
     "tagline": "What We Do",
+    "detailLink": "More about this service",
     "title1": "Our",
     "title2": "Services",
     "description": "We provide clients with comprehensive service from new product design, through its structural solution to implementation into production.",

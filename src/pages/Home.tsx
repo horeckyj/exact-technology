@@ -56,10 +56,10 @@ const Home: React.FC = () => {
             className="absolute top-0 right-0 w-full h-full opacity-10"
           >
             <img
-              src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1920"
-              alt="Background"
+              src={resolveAssetUrl('/image/TechnicalDrawing.jpg')}
+              alt=""
+              aria-hidden="true"
               className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
             />
           </motion.div>
         </div>

@@ -1,70 +1,23 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Search, Palette, Box, RotateCcw, FileText, Settings, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
+import { ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { resolveAssetUrl } from '../utils/assetPath';
+import { servicesData } from '../data/services';
 
 const Services: React.FC = () => {
   const { t } = useTranslation();
   const [expandedService, setExpandedService] = useState<string | null>(null);
-  const marketResearch = resolveAssetUrl('/image/Support.jpg');
-  const designGraphics = resolveAssetUrl('/image/DetailedGraphics.jpg');
-  const constructionSolutions = resolveAssetUrl('/image/ManufacturingSolution.jpg');
-  const reverseEngineering = resolveAssetUrl('/image/ReverseEngineering.png');
-  const drawingDocumentation = resolveAssetUrl('/image/TechnicalDrawing.jpg');
-  const productionSupport = resolveAssetUrl('/image/ManufacuringSolutions.png');
 
-  const services = [
-    {
-      id: 'pruzkum-trhu',
-      icon: <Search className="w-8 h-8 text-brand-500" />,
-      title: t('services.s1.title'),
-      description: t('services.s1.desc'),
-      features: [t('services.s1.f1'), t('services.s1.f2'), t('services.s1.f3'), t('services.s1.f4')],
-        image: marketResearch
-    },
-    {
-      id: 'design-grafika',
-      icon: <Palette className="w-8 h-8 text-brand-500" />,
-      title: t('services.s2.title'),
-      description: t('services.s2.desc'),
-      features: [t('services.s2.f1'), t('services.s2.f2'), t('services.s2.f3'), t('services.s2.f4')],
-        image: designGraphics
-    },
-    {
-      id: 'konstrukcni-reseni',
-      icon: <Box className="w-8 h-8 text-brand-500" />,
-      title: t('services.s3.title'),
-      description: t('services.s3.desc'),
-      features: [t('services.s3.f1'), t('services.s3.f2'), t('services.s3.f3'), t('services.s3.f4')],
-        image: constructionSolutions
-    },
-    {
-      id: 'reverzni-inzenyrstvi',
-      icon: <RotateCcw className="w-8 h-8 text-brand-500" />,
-      title: t('services.s4.title'),
-      description: t('services.s4.desc'),
-      features: [t('services.s4.f1'), t('services.s4.f2'), t('services.s4.f3'), t('services.s4.f4')],
-        image: reverseEngineering
-    },
-    {
-      id: 'vykresova-dokumentace',
-      icon: <FileText className="w-8 h-8 text-brand-500" />,
-      title: t('services.s5.title'),
-      description: t('services.s5.desc'),
-      features: [t('services.s5.f1'), t('services.s5.f2'), t('services.s5.f3'), t('services.s5.f4')],
-        image: drawingDocumentation
-    },
-    {
-      id: 'podpora-vyroby',
-      icon: <Settings className="w-8 h-8 text-brand-500" />,
-      title: t('services.s6.title'),
-      description: t('services.s6.desc'),
-      features: [t('services.s6.f1'), t('services.s6.f2'), t('services.s6.f3'), t('services.s6.f4')],
-        image: productionSupport
-    }
-  ];
+  const services = servicesData.map(({ id, key, icon: Icon, image }) => ({
+    id,
+    icon: <Icon className="w-8 h-8 text-brand-500" />,
+    title: t(`${key}.title`),
+    description: t(`${key}.desc`),
+    features: [t(`${key}.f1`), t(`${key}.f2`), t(`${key}.f3`), t(`${key}.f4`)],
+    image
+  }));
 
   return (
     <div className="min-h-screen bg-slate-950 pt-20 pb-24 overflow-hidden">
@@ -140,6 +93,13 @@ const Services: React.FC = () => {
                     </li>
                   ))}
                 </ul>
+                <Link
+                  to={`/sluzby/${service.id}`}
+                  className="group/link inline-flex items-center gap-2 self-start text-brand-400 hover:text-brand-300 font-semibold transition-colors"
+                >
+                  {t('services.detailLink')}
+                  <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+                </Link>
               </div>
             </motion.div>
           ))}
@@ -152,7 +112,7 @@ const Services: React.FC = () => {
           className="mt-24 relative bg-brand-500 rounded-[3rem] p-12 md:p-20 text-center text-white overflow-hidden shadow-2xl"
         >
           <div className="absolute inset-0 z-0">
-            <img src="https://picsum.photos/seed/abstract-orange/1200/400" alt="Abstract" className="w-full h-full object-cover opacity-20 mix-blend-overlay" referrerPolicy="no-referrer" />
+            <img src={resolveAssetUrl('/image/designdocumentation.png')} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-20 mix-blend-overlay" />
             <div className="absolute inset-0 bg-gradient-to-r from-brand-600/80 to-brand-900/90"></div>
           </div>
           <div className="relative z-10">

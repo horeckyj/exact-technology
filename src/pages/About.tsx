@@ -179,7 +179,7 @@ const About: React.FC = () => {
           className="relative bg-slate-900 rounded-[3rem] p-12 md:p-20 text-center text-white overflow-hidden shadow-2xl border border-slate-800"
         >
           <div className="absolute inset-0 z-0">
-            <img src="https://picsum.photos/seed/abstract-dark/1200/400" alt="Abstract" className="w-full h-full object-cover opacity-20 mix-blend-overlay" referrerPolicy="no-referrer" />
+            <img src={resolveAssetUrl('/image/DetailedGraphics.jpg')} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-20 mix-blend-overlay" />
             <div className="absolute inset-0 bg-gradient-to-r from-brand-900/60 to-slate-900/90"></div>
           </div>
           

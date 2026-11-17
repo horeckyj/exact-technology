@@ -3,18 +3,20 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Services from './pages/Services';
-import ServiceDetail from './pages/ServiceDetail';
-import Cooperation from './pages/Cooperation';
-import Projects from './pages/Projects';
-import ProjectDetail from './pages/ProjectDetail';
-import About from './pages/About';
-import Contact from './pages/Contact';
+
+// Home stays in the main bundle (landing page); other pages load on demand.
+const Services = lazy(() => import('./pages/Services'));
+const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
+const Cooperation = lazy(() => import('./pages/Cooperation'));
+const Projects = lazy(() => import('./pages/Projects'));
+const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
+const About = lazy(() => import('./pages/About'));
+const Contact = lazy(() => import('./pages/Contact'));
 import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import Seo from './components/Seo';
@@ -27,6 +29,7 @@ export default function App() {
       <div className="flex flex-col min-h-screen font-sans text-slate-300 bg-slate-950 selection:bg-brand-500/30">
         <Header />
         <main className="flex-grow">
+          <Suspense fallback={<div className="min-h-screen" />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sluzby" element={<Services />} />
@@ -38,6 +41,7 @@ export default function App() {
             <Route path="/kontakt" element={<Contact />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
+          </Suspense>
         </main>
         <Footer />
         <ScrollToTopButton />

@@ -4,10 +4,9 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 on:
-  merge_group:
+  push:
     branches:
       - main
-      - test
 
 
 jobs:
@@ -38,4 +37,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          dangerous-clean-slate: true
+          remote-dir: ./web/

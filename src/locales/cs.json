@@ -90,6 +90,7 @@
   },
     "services": {
     "tagline": "Co děláme",
+    "detailLink": "Více o službě",
     "title1": "Naše",
     "title2": "Služby",
     "description": "Poskytujeme klientům komplexní servis od návrhu nového výrobku, přes jeho konstrukční řešení až po implementaci do výroby.",
@@ -240,7 +241,7 @@
     "story": {
       "title": "Náš příběh",
       "p1": "Naše zkušenosti se datují již od roku 1990, kdy jsme začínali jako designové studio. Postupem času jsme si uvědomili, že pro perfektní výrobek je třeba úzce propojit design s konstrukcí.",
-      "p2": "Proto jsme v roce 2001 založili společnost EXACT Technology s.r.o.a uplynulé roky jsme přivedli k životu nespočet projektů z dopravy, medicíny, strojírenství i spotřebního zboží, vždy s cílem zajistit jedinečný tvar a konkurenceschopnost na trhu."
+      "p2": "Proto jsme v roce 2001 založili společnost EXACT Technology s.r.o. a uplynulé roky jsme přivedli k životu nespočet projektů z dopravy, medicíny, strojírenství i spotřebního zboží, vždy s cílem zajistit jedinečný tvar a konkurenceschopnost na trhu."
     },
     "stats": {
       "s1": "let zkušeností v oboru designu a konstrukce",

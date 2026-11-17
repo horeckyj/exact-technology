@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { CheckCircle2, ChevronDown, ExternalLink, Undo2, X, ZoomIn } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -17,12 +17,7 @@ const ProjectDetail: React.FC = () => {
     return Object.fromEntries(projectsData.map((item) => [item.id, item]));
   }, []);
 
-  const defaultProject = projectsData[0];
-  const project = (id && projectById[id]) || defaultProject;
-
-  const localizedDescription = i18n.language.startsWith('cs')
-    ? `Návrh a konstrukční řešení projektu ${project.title} pro klienta ${project.client}.`
-    : project.description;
+  const project = id ? projectById[id] : undefined;
 
   const results = [
     t('projectDetail.dynamic.r1'),
@@ -68,6 +63,15 @@ const ProjectDetail: React.FC = () => {
       window.removeEventListener('scroll', closePreviewOnScroll);
     };
   }, []);
+
+  // Unknown or removed project ID -> back to the project list (after all hooks have run).
+  if (!project) {
+    return <Navigate to="/projekty" replace />;
+  }
+
+  const localizedDescription = i18n.language.startsWith('cs')
+    ? `Návrh a konstrukční řešení projektu ${project.title} pro klienta ${project.client}.`
+    : project.description;
 
   return (
     <div className="min-h-screen bg-slate-950 pt-8 pb-24">

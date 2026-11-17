@@ -13,7 +13,14 @@ i18n
       cs: { translation: cs },
       en: { translation: en }
     },
+    // Default to Czech; only a language the visitor picked manually (stored in
+    // localStorage by the header switcher) overrides it. Browser language is ignored.
     fallbackLng: 'cs',
+    supportedLngs: ['cs', 'en'],
+    detection: {
+      order: ['localStorage'],
+      caches: ['localStorage'],
+    },
     interpolation: {
       escapeValue: false
     }

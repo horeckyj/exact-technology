@@ -18,36 +18,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy_ftp:
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: npm
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build site
-        run: npm run build
-
-      - name: Upload site to FTP server
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
-          dangerous-clean-slate: true
-
   deploy_gh_pages:
     if: github.ref == 'refs/heads/test'
     runs-on: ubuntu-latest
@@ -70,6 +40,9 @@ jobs:
         run: npm run build
         env:
           BASE_URL: /exact-technology/
+
+      - name: Add SPA fallback (404.html)
+        run: cp dist/index.html dist/404.html
 
       - name: Deploy dist to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4

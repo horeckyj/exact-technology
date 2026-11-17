@@ -1,0 +1,93 @@
+.svw {
+  width: 50px;
+  height: 20px;
+  margin: 10px;
+  font-weight: bold;
+} 
+
+.svw ul {
+  position: relative;
+  left: -999em;
+  list-style-type: none;
+} 
+ 
+.stripViewer {
+  position: relative;
+  overflow: hidden;
+  margin: -3px 0 0 -1px;
+}
+
+.stripViewer img {
+  z-index: 1;
+} 
+
+.stripViewer ul { 
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 1%;
+  list-style-type: none;
+} 
+
+.stripViewer ul li {
+  float: left;
+} 
+
+.stripTransmitter {
+  position: absolute;
+  top: 710px;
+  right: 538px;
+  z-index: 1001;
+}
+ 
+.stripTransmitter ul {
+  padding: 0;
+  float: right;
+  border-left: 2px solid #969494;
+}
+ 
+.stripTransmitter ul li {
+  float: left;
+  width: 25px;
+  margin: 0 0 1px 0;
+  list-style-type: none;
+
+}
+ 
+.stripTransmitter a, .stripTransmitter a:link, .stripTransmitter a:visited {
+  font: bold 15px Arial, sans-serif;
+  text-align: center;
+  line-height: 22px;
+  color: #969494;
+  text-decoration: none;
+  display: block;
+  border-right: 2px solid #969494;
+}
+ 
+.stripTransmitter a:hover, a.current, .stripTransmitter a.current:link, .stripTransmitter a.current:visited {
+  color: #E87817; 
+}
+
+.stripTransmitterBack {
+  position: absolute;
+  top: 710px;
+  left: 1070px;
+  width: 25px;
+  margin: 0 0 1px 0;
+  z-index: 1001;
+}
+
+.stripTransmitterBack a, .stripTransmitterBack a:link, .stripTransmitterBack a:visited {
+  font: bold 15px Arial, sans-serif;
+  text-align: center;
+  line-height: 22px;
+  color: #E87817;
+  text-decoration: none;
+  display: block;
+}
+
+.stripTransmitterBack a:hover {
+  color: #E87817;
+}

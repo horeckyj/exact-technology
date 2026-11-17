@@ -1,0 +1,16 @@
+.header, .menu, .language {
+  display: none;
+}
+
+.homepage_wrapper, .text_wrapper, .text, .gallery_wrapper {
+  height: auto;
+}
+
+.footer {
+  position: absolute;
+  top: 0;
+  float: none;
+  font-size: 10px;
+  width: auto;
+  text-align: center;
+}

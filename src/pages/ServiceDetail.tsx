@@ -1,38 +1,29 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ArrowLeft, CheckCircle2, MonitorSmartphone, Code2, Cloud, Database, ExternalLink } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, ExternalLink } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { servicesData } from '../data/services';
 
 const ServiceDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const { t } = useTranslation();
 
-  const serviceNumberById: Record<string, string> = {
-    'pruzkum-trhu': '1',
-    'design-grafika': '2',
-    'konstrukcni-reseni': '3',
-    'reverzni-inzenyrstvi': '4',
-    'vykresova-dokumentace': '5',
-    'podpora-vyroby': '6'
-  };
-  const serviceNumber = serviceNumberById[id ?? ''] ?? '1';
-  const serviceKey = `services.s${serviceNumber}`;
+  const definition = servicesData.find((s) => s.id === id);
+  if (!definition) {
+    return <Navigate to="/sluzby" replace />;
+  }
 
+  const { key, icon: Icon, image } = definition;
   const service = {
-    id: id ?? 'pruzkum-trhu',
-    title: t(`${serviceKey}.title`),
-    icon: <MonitorSmartphone className="w-12 h-12 text-brand-500" />,
-    description: t(`${serviceKey}.desc`),
+    title: t(`${key}.title`),
+    icon: <Icon className="w-12 h-12 text-brand-500" />,
+    description: t(`${key}.desc`),
     fullDescription: t('serviceDetail.fullDescription'),
-    image: 'https://picsum.photos/seed/web-dev/1200/600?blur=1',
-    features: [
-      t(`${serviceKey}.f1`),
-      t(`${serviceKey}.f2`),
-      t(`${serviceKey}.f3`),
-      t(`${serviceKey}.f4`)
-    ],
-    technologies: ['React', 'Vue.js', 'Node.js', 'TypeScript', 'Next.js', 'Tailwind CSS']
+    image,
+    features: [t(`${key}.f1`), t(`${key}.f2`), t(`${key}.f3`), t(`${key}.f4`)],
+    // The 3D software the company works with (see serviceDetail.fullDescription).
+    technologies: ['Pro Engineer', 'SolidWorks']
   };
 
   return (
@@ -43,7 +34,6 @@ const ServiceDetail: React.FC = () => {
           src={service.image} 
           alt={service.title} 
           className="absolute inset-0 w-full h-full object-cover"
-          referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-slate-950/90 z-10"></div>
         
