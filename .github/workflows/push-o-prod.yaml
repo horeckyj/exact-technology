@@ -30,11 +30,29 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Upload site to FTP server
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+      # .htaccess routes SPA URLs (/projekty, /kontakt, ...) to index.html - without it they return 404.
+      - name: Check .htaccess is in the build
+        run: test -f dist/.htaccess
+
+      # Uploads the contents of dist/. The "*" glob skips dotfiles, so .htaccess goes in the next step.
+      - name: SFTP Deploy (site)
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_NAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
-          remote-dir: ./web/
+          port: 22
+          local_path: './dist/*'
+          remote_path: 'web/'
+          sftp_only: true
+
+      - name: SFTP Deploy (.htaccess)
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_NAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 22
+          local_path: './dist/.htaccess'
+          remote_path: 'web/'
+          sftp_only: true
