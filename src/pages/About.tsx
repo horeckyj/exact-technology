@@ -5,14 +5,46 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { resolveAssetUrl } from '../utils/assetPath';
 
+const LEMNISCATE_PATH =
+  'M 100 70 C 100 30, 40 30, 40 70 C 40 110, 100 110, 100 70 C 100 30, 160 30, 160 70 C 160 110, 100 110, 100 70';
+
 const About: React.FC = () => {
   const { t } = useTranslation();
 
-  const stats = [
-    { label: t('about.stats.s1'), value: '35+' },
+  const stats: { label: string; value: React.ReactNode }[] = [
+    { label: t('about.stats.s1'), value: '30+' },
     { label: t('about.stats.s2'), value: '120+' },
     { label: t('about.stats.s3'), value: '8+' },
-    { label: t('about.stats.s4'), value: '1' }
+    {
+      label: t('about.stats.s4'),
+      value: (
+        <svg
+          viewBox="32 34 136 72"
+          className="w-20 h-11 sm:w-24 sm:h-14 overflow-visible"
+          role="img"
+          aria-label="∞"
+        >
+          <defs>
+            <linearGradient id="lemniscateGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#ff8a20" />
+              <stop offset="50%" stopColor="#ffad55" />
+              <stop offset="100%" stopColor="#fcd34d" />
+            </linearGradient>
+          </defs>
+          <path
+            className="lemniscate-path"
+            d={LEMNISCATE_PATH}
+            fill="none"
+            stroke="url(#lemniscateGradient)"
+            strokeWidth={5}
+            strokeLinecap="round"
+          />
+          <circle r={6} fill="#ffffff" className="lemniscate-dot">
+            <animateMotion dur="3.5s" repeatCount="indefinite" path={LEMNISCATE_PATH} />
+          </circle>
+        </svg>
+      )
+    }
   ];
 
   const values = [
@@ -100,7 +132,7 @@ const About: React.FC = () => {
                   whileHover={{ scale: 1.05 }}
                   className="bg-slate-900 min-h-36 p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-800 text-center flex flex-col items-center justify-center"
                 >
-                  <div className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-brand-400 to-amber-300 mb-2">{stat.value}</div>
+                  <div className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-brand-400 to-amber-300 mb-2 min-h-10 sm:min-h-14 flex items-center justify-center">{stat.value}</div>
                   <div className="text-slate-500 font-medium text-xs sm:text-sm uppercase tracking-wider leading-tight">{stat.label}</div>
                 </motion.div>
               ))}
@@ -113,15 +145,15 @@ const About: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="grid grid-cols-2 gap-4 h-[600px]"
+            className="grid grid-cols-2 gap-3 sm:gap-4 h-[420px] sm:h-[600px]"
           >
-            <div className="space-y-4 h-full">
-              <img src={resolveAssetUrl('/image/ManufacturingSolution.jpg')} alt="3D Modeling" className="w-full h-3/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
-              <img src={resolveAssetUrl('/image/designdocumentation.png')} alt="Engineering" className="w-full h-2/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+            <div className="flex flex-col gap-3 sm:gap-4 h-full min-h-0">
+              <img src={resolveAssetUrl('/image/ManufacturingSolution.jpg')} alt="3D Modeling" className="w-full flex-[3] min-h-0 object-cover rounded-2xl sm:rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+              <img src={resolveAssetUrl('/image/designdocumentation.png')} alt="Engineering" className="w-full flex-[2] min-h-0 object-cover rounded-2xl sm:rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
             </div>
-            <div className="space-y-4 h-full pt-12">
-              <img src={resolveAssetUrl('/image/TechnicalDrawing.jpg')} alt="Documentation" className="w-full h-2/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
-              <img src={resolveAssetUrl('/image/public/ExTech_Making_2.png')} alt="Design" className="w-full h-3/5 object-cover rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+            <div className="flex flex-col gap-3 sm:gap-4 h-full min-h-0 pt-8 sm:pt-12">
+              <img src={resolveAssetUrl('/image/TechnicalDrawing.jpg')} alt="Documentation" className="w-full flex-[2] min-h-0 object-cover rounded-2xl sm:rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
+              <img src={resolveAssetUrl('/image/public/ExTech_Making_2.png')} alt="Design" className="w-full flex-[3] min-h-0 object-cover rounded-2xl sm:rounded-3xl shadow-lg" referrerPolicy="no-referrer" />
             </div>
           </motion.div>
         </div>
