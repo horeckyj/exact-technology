@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { resolveAssetUrl } from '../utils/assetPath';
 
 const LEMNISCATE_PATH =
-  'M 100 70 C 100 30, 40 30, 40 70 C 40 110, 100 110, 100 70 C 100 30, 160 30, 160 70 C 160 110, 100 110, 100 70';
+  'M 100 70 C 100 50, 40 50, 40 70 C 40 90, 100 90, 100 70 C 100 50, 160 50, 160 70 C 160 90, 100 90, 100 70';
 
 const About: React.FC = () => {
   const { t } = useTranslation();
@@ -19,8 +19,8 @@ const About: React.FC = () => {
       label: t('about.stats.s4'),
       value: (
         <svg
-          viewBox="32 34 136 72"
-          className="w-20 h-11 sm:w-24 sm:h-14 overflow-visible"
+          viewBox="32 44 136 52"
+          className="w-24 h-9 sm:w-28 sm:h-10 overflow-visible"
           role="img"
           aria-label="∞"
         >
@@ -39,7 +39,7 @@ const About: React.FC = () => {
             strokeWidth={5}
             strokeLinecap="round"
           />
-          <circle r={6} fill="#ffffff" className="lemniscate-dot">
+          <circle r={5} fill="#ffffff" className="lemniscate-dot">
             <animateMotion dur="3.5s" repeatCount="indefinite" path={LEMNISCATE_PATH} />
           </circle>
         </svg>

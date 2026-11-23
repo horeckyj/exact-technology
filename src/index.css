@@ -20,7 +20,7 @@
   --color-brand-950: #3d1407;
 }
 
-/* Animated lemniscate (infinity) used in the About page stats */
+/* Animated lemniscate used in the About page stats */
 .lemniscate-path {
   stroke-dasharray: 20 12;
   animation: lemniscate-dash 2.5s linear infinite;
