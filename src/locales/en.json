@@ -37,7 +37,7 @@
     "contact": {
       "title": "Contact",
       "address": "Ocelkova 643/20, 198 00 Praha 9",
-      "phone": "+420 234 139 884",
+      "phone": "+420 220 570 019",
       "email": "info@exact-tech.cz"
     },
     "copyright": "© EXACT Technology, s.r.o. All rights reserved.",
@@ -293,7 +293,7 @@
       },
       "phone": {
         "title": "Phone",
-        "val": "+420 234 139 884",
+        "val": "+420 220 570 019",
         "desc": "Call to schedule a meeting"
       },
       "quick": "Need to discuss your project?",

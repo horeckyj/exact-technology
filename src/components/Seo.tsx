@@ -112,7 +112,7 @@ export default function Seo() {
       ...(project ? { description: metadata.description, creator: { '@type': 'Organization', name: 'EXACT Technology' } } : {
         description: metadata.description,
         email: 'mailto:info@exact-tech.cz',
-        telephone: '+420 234 139 884',
+        telephone: '+420 220 570 019',
         address: { '@type': 'PostalAddress', streetAddress: 'Ocelkova 643/20', postalCode: '198 00', addressLocality: 'Praha 9', addressCountry: 'CZ' },
       }),
     });
