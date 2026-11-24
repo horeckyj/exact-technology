@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">{t('contact.info.phone.title')}</h3>
                 <p className="text-slate-400 leading-relaxed font-light">
-                  <a href="tel:+420123456789" className="hover:text-brand-400 transition-colors">{t('contact.info.phone.val')}</a><br />
+                  <a href={`tel:${t('contact.info.phone.val').replace(/[\s()-]/g, '')}`} className="hover:text-brand-400 transition-colors">{t('contact.info.phone.val')}</a><br />
                   <span className="text-sm text-slate-500">{t('contact.info.phone.desc')}</span>
                 </p>
               </motion.div>
