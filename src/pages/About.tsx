@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { resolveAssetUrl } from '../utils/assetPath';
 
 const LEMNISCATE_PATH =
-  'M 100 70 C 100 50, 40 50, 40 70 C 40 90, 100 90, 100 70 C 100 50, 160 50, 160 70 C 160 90, 100 90, 100 70';
+  'M 100 70 C 100 46, 44 46, 44 70 C 44 94, 100 94, 100 70 C 100 46, 156 46, 156 70 C 156 94, 100 94, 100 70';
 
 const About: React.FC = () => {
   const { t } = useTranslation();
@@ -19,8 +19,8 @@ const About: React.FC = () => {
       label: t('about.stats.s4'),
       value: (
         <svg
-          viewBox="32 44 136 52"
-          className="w-24 h-9 sm:w-28 sm:h-10 overflow-visible"
+          viewBox="38 48 124 50"
+          className="w-24 h-10 sm:w-24 sm:h-10 overflow-visible"
           role="img"
           aria-label="∞"
         >
